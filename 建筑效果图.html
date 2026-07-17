@@ -1,0 +1,202 @@
+<title>四层商住自建房 · 街角效果图</title>
+<style>
+:root{
+  --bg:#E9E5DD; --card:#ffffff; --ink:#26282A; --muted:#6E6B65; --line:#DAD5CC;
+  --sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",-apple-system,sans-serif;
+  --serif:"Noto Serif SC","Songti SC",serif; --mono:Consolas,ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root{--bg:#17181A;--card:#1F2124;--ink:#E8E5DF;--muted:#9A968E;--line:#34363A;}}
+:root[data-theme="dark"]{--bg:#17181A;--card:#1F2124;--ink:#E8E5DF;--muted:#9A968E;--line:#34363A;}
+:root[data-theme="light"]{--bg:#E9E5DD;--card:#fff;--ink:#26282A;--muted:#6E6B65;--line:#DAD5CC;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:34px 20px 48px}
+.head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 4px}
+.head h1{font-family:var(--serif);font-weight:600;font-size:clamp(20px,3.4vw,27px);margin:0;letter-spacing:.04em}
+.head .en{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;color:var(--muted)}
+.sub{color:var(--muted);font-size:13.5px;margin:0 0 18px;max-width:60em}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;
+  box-shadow:0 18px 46px -22px rgba(0,0,0,.5)}
+.frame svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:9px 22px;padding:15px 20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.legend b{color:var(--ink);font-weight:600}
+.sw{display:inline-block;width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:7px;border:1px solid rgba(0,0,0,.12)}
+.note{margin:16px 2px 0;font-size:12px;color:var(--muted);line-height:1.7}
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <h1>四层临街商住自建房 · 街角效果图</h1>
+    <span class="en">STREET VIEW</span>
+  </div>
+  <p class="sub">现代简约风 · 16m 面宽 × 15m 进深 × 四层。下商（通透店面）— 中宿（白墙 + 入口木格栅）— 上居（顶层退台露台 + 木格栅廊架）。街角人视示意，按真实体量绘制。</p>
+
+  <div class="frame">
+    <svg id="scene" viewBox="0 0 940 660" role="img" aria-label="四层商住自建房街角效果图：一层玻璃商铺与民宿入口、二三层白色涂料立面与入口木格栅、四层退台露台与木格栅廊架"></svg>
+    <div class="legend">
+      <span><i class="sw" style="background:#ECE7DE"></i><b>白色质感涂料</b> 立面主体</span>
+      <span><i class="sw" style="background:#B5895A"></i><b>木纹铝格栅</b> 入口 / 廊架</span>
+      <span><i class="sw" style="background:#93A9B4"></i><b>超白玻璃</b> 店面 / 移门 / 栏板</span>
+      <span><i class="sw" style="background:#33363A"></i><b>炭灰</b> 门窗框 / 店招</span>
+      <span><i class="sw" style="background:#C9A374"></i><b>防腐木</b> 露台平台</span>
+      <span><i class="sw" style="background:#C3B79C"></i><b>铝百叶</b> 空调机位（窗间墙垛）</span>
+    </div>
+  </div>
+  <p class="note">说明：本图为体量与材质示意（非照片级渲染），用于把控外观与沿街效果。一层商铺与民宿独立入口，二三层民宿客房，四层自住大平层退台 5m 形成 80㎡ 开放露台，顶部木格栅廊架遮阳。</p>
+</div>
+
+<script>
+(function(){
+  // ---- façade-forward oblique：正立面近似真实，进深向右上退去 ----
+  var sc=25, dX=12.5, dY=-8.5, OX=138, OY=545;
+  function pt(x,y,z){return [OX + x*sc + y*dX, OY - z*sc + y*dY];}
+  function s(x,y,z){var p=pt(x,y,z);return p[0].toFixed(1)+','+p[1].toFixed(1);}
+  function poly(pts,fill,extra){return '<polygon points="'+pts.map(function(p){return s(p[0],p[1],p[2]);}).join(' ')+'" fill="'+fill+'"'+(extra||'')+'/>';}
+  function ln(a,b,stroke,w,extra){var p1=pt(a[0],a[1],a[2]),p2=pt(b[0],b[1],b[2]);return '<line x1="'+p1[0].toFixed(1)+'" y1="'+p1[1].toFixed(1)+'" x2="'+p2[0].toFixed(1)+'" y2="'+p2[1].toFixed(1)+'" stroke="'+stroke+'" stroke-width="'+w+'" stroke-linecap="round"'+(extra||'')+'/>';}
+
+  var C={rF:'#EDE8DF',rS:'#D2CBBD',rT:'#F6F3EC',wood:'#B98A57',woodS:'#9A7346',
+    deck:'#C9A374',frame:'#33363A',sign:'#292C2F',parapet:'#E4DED3',parapetS:'#C9C1B2'};
+  var H1=4.5, H3=11.1, H4=14.4, SB=5, W=16, D=15;
+  var out=[];
+
+  // ---------- SKY / GROUND ----------
+  out.push('<rect x="0" y="0" width="940" height="660" fill="url(#sky)"/>');
+  out.push('<circle cx="150" cy="150" r="130" fill="url(#sun)"/>');
+  out.push('<ellipse cx="470" cy="96" rx="78" ry="17" fill="#ffffff" opacity=".5"/>');
+  out.push('<ellipse cx="545" cy="110" rx="52" ry="13" fill="#ffffff" opacity=".4"/>');
+  out.push('<ellipse cx="770" cy="80" rx="66" ry="15" fill="#ffffff" opacity=".42"/>');
+  // ground plane
+  out.push(poly([[-8,-6,0],[26,-6,0],[26,22,0],[-8,22,0]],'url(#ground)'));
+  // street strip (front, Y negative)
+  out.push(poly([[-8,-6,0],[26,-6,0],[26,-3.2,0],[-8,-3.2,0]],'#ABA598'));
+  out.push(ln([-8,-4.6,0],[26,-4.6,0],'#EFE9DC',1.6,' stroke-dasharray="8 8" opacity=".7"'));
+  out.push(ln([-8,-3.2,0],[26,-3.2,0],'#B7B0A3',2));
+  // building cast shadow (sun upper-left → shadow to right)
+  out.push(poly([[0,0,0],[W,0,0],[W+3,3,0],[3,3,0]],'rgba(45,42,36,.18)'));
+  out.push(poly([[W,0,0],[W,D,0],[W+3,D+3,0],[W+3,3,0]],'rgba(45,42,36,.13)'));
+
+  // ---------- RIGHT SIDE FACES (X=W) ----------
+  out.push(poly([[W,0,0],[W,D,0],[W,D,H3],[W,0,H3]], C.rS));               // main mass side
+  out.push(poly([[W,0,0],[W,D,0],[W,D,H1],[W,0,H1]], '#C6BEAF'));          // 1F plinth side
+  (function(){var ys=[3.4,7.5,11.6];for(var f=0;f<2;f++){var z1=5.1+f*3.3,z2=z1+1.9;for(var i=0;i<ys.length;i++){var y1=ys[i],y2=y1+2.1;
+    out.push(poly([[W,y1,z1],[W,y2,z1],[W,y2,z2],[W,y1,z2]],'url(#glassS)'));
+    out.push(poly([[W,y1,z1],[W,y2,z1],[W,y2,z2],[W,y1,z2]],'none',' stroke="'+C.frame+'" stroke-width="1.4"'));
+  }}})();
+  out.push(poly([[W,SB,H3],[W,D,H3],[W,D,H4],[W,SB,H4]], C.rS));           // 4F side
+  out.push(poly([[W,7,11.7],[W,11.5,11.7],[W,11.5,13.7],[W,7,13.7]],'url(#glassS)'));
+  out.push(poly([[W,7,11.7],[W,11.5,11.7],[W,11.5,13.7],[W,7,13.7]],'none',' stroke="'+C.frame+'" stroke-width="1.3"'));
+
+  // ---------- ROOF ASSEMBLY (behind/above facade) ----------
+  // terrace deck (Y0..SB at Z=H3)
+  out.push(poly([[0,0,H3],[W,0,H3],[W,SB,H3],[0,SB,H3]], C.deck));
+  for(var yd=0.7; yd<SB; yd+=0.72){out.push(ln([0,yd,H3],[W,yd,H3],'#b8935f',1,' opacity=".65"'));}
+  // planter + lounge
+  out.push(poly([[0.5,0.5,H3],[5.5,0.5,H3],[5.5,1.5,H3],[0.5,1.5,H3]],'#7C8A5A'));
+  out.push(poly([[0.5,0.5,H3],[5.5,0.5,H3],[5.5,0.5,H3+0.55],[0.5,0.5,H3+0.55]],'#8fa06a'));
+  out.push(poly([[1.4,2.7,H3],[4.4,2.7,H3],[4.4,4.1,H3],[1.4,4.1,H3]],'#EDE7DB'));
+  out.push(poly([[1.4,2.7,H3],[4.4,2.7,H3],[4.4,2.7,H3+0.45],[1.4,2.7,H3+0.45]],'#DBD2C3'));
+  // 4F front face (Y=SB): render + big LDK glazing
+  out.push(poly([[0,SB,H3],[W,SB,H3],[W,SB,H4],[0,SB,H4]], 'url(#renderF)'));
+  out.push(poly([[0.6,SB,11.55],[15.4,SB,11.55],[15.4,SB,13.9],[0.6,SB,13.9]],'url(#glassF)'));
+  for(var xm=4;xm<W;xm+=4){out.push(ln([xm,SB,11.55],[xm,SB,13.9],'#95a8b0',1.3));}
+  out.push(poly([[0.6,SB,11.55],[15.4,SB,11.55],[15.4,SB,13.9],[0.6,SB,13.9]],'none',' stroke="'+C.frame+'" stroke-width="1.5"'));
+  out.push(poly([[8.8,SB,11.75],[13.4,SB,11.75],[13.4,SB,13.6],[8.8,SB,13.6]],'url(#warm)',' opacity=".4"'));
+  // 4F roof + parapet
+  out.push(poly([[0,SB,H4],[W,SB,H4],[W,D,H4],[0,D,H4]], C.rT));
+  out.push(poly([[0,SB,H4],[W,SB,H4],[W,SB,H4+0.45],[0,SB,H4+0.45]],C.parapet));
+  out.push(ln([0,SB,H4],[0,D,H4],C.parapetS,1.2));
+  // pergola over east half of terrace
+  (function(){var px1=8,px2=15.3,py1=0.6,py2=4.3,zt=13.4,zb=H3;
+    [[px1,py1],[px2,py1],[px1,py2],[px2,py2]].forEach(function(c){out.push(ln([c[0],c[1],zb],[c[0],c[1],zt],C.woodS,3));});
+    out.push(ln([px1,py1,zt],[px2,py1,zt],C.wood,3)); out.push(ln([px1,py2,zt],[px2,py2,zt],C.woodS,3));
+    out.push(ln([px1,py1,zt],[px1,py2,zt],C.wood,3)); out.push(ln([px2,py1,zt],[px2,py2,zt],C.woodS,3));
+    for(var xs=px1+0.5;xs<px2;xs+=0.62){out.push(ln([xs,py1,zt],[xs,py2,zt],C.wood,2,' opacity=".92"'));}
+    for(var xsh=px1+0.5;xsh<px2;xsh+=0.62){out.push(ln([xsh,py1,H3],[xsh,py2,H3],'rgba(80,60,35,.10)',2));}
+  })();
+
+  // ---------- FRONT FAÇADE (Y=0) drawn on top ----------
+  out.push(poly([[0,0,H1],[W,0,H1],[W,0,H3],[0,0,H3]], 'url(#renderF)'));  // 2F-3F render
+  out.push(ln([0,0,7.8],[W,0,7.8],'#DCD4C7',1.3));                    // floor line
+  // 1F storefront（商铺占西侧 X0-12，入口在东端）
+  out.push(poly([[0,0,0.25],[12,0,0.25],[12,0,3.95],[0,0,3.95]],'url(#glassF)'));
+  for(var xf=2;xf<12;xf+=2){out.push(ln([xf,0,0.25],[xf,0,3.95],'#8fa3ac',1));}
+  out.push(poly([[4.4,0,0.4],[7.6,0,0.4],[7.6,0,3.4],[4.4,0,3.4]],'url(#warm)',' opacity=".5"'));
+  out.push(ln([0,0,3.95],[12,0,3.95],C.frame,2)); out.push(ln([0,0,0.3],[12,0,0.3],'#8f8778',2));
+  // signband + text
+  out.push(poly([[0,0,4.0],[12,0,4.0],[12,0,4.66],[0,0,4.66]], C.sign));
+  (function(){var p=pt(6,0,4.33);out.push('<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+3.5).toFixed(1)+'" fill="#EBE7DE" font-family="Consolas,monospace" font-size="9" letter-spacing="3.5" text-anchor="middle">S H O P&#160;·&#160;S H O P</text>');})();
+  // 民宿 entrance bay (X12..16，东端): recessed glass + wood portal + canopy
+  out.push(poly([[12,0,0.2],[16,0,0.2],[16,0,4.0],[12,0,4.0]],'#7d94a0'));
+  out.push(poly([[12.5,0,0.25],[15.5,0,0.25],[15.5,0,3.5],[12.5,0,3.5]],'url(#glassF)'));
+  out.push(ln([14,0,0.25],[14,0,3.5],'#eef2f2',1.4));
+  out.push(poly([[12,0,4.0],[16,0,4.0],[16,0,4.66],[12,0,4.66]], C.wood));
+  out.push(poly([[11.7,0,4.66],[16.3,0,4.66],[16.5,-1.1,4.5],[11.5,-1.1,4.5]],'#8a6a44'));  // canopy
+  // 入口木格栅 2F-3F (front plane，东端)
+  for(var xg=12.15;xg<=15.75;xg+=0.33){out.push(ln([xg,0,4.75],[xg,0,H3-0.05],(Math.round(xg/0.33)%2? C.wood:'#AE8150'),2.4));}
+  out.push(poly([[12,0,4.75],[16,0,4.75],[16,0,H3],[12,0,H3]],'none',' stroke="'+C.frame+'" stroke-width="1.3"'));
+  // 2F-3F windows on bays A/B/C（西侧三跨）
+  (function(){var bx=[0,4,8];for(var f=0;f<2;f++){var z1=5.2+f*3.3,z2=z1+2.0;for(var i=0;i<bx.length;i++){var x1=bx[i]+0.85,x2=bx[i]+3.15;
+    out.push(poly([[x1,0,z1],[x2,0,z1],[x2,0,z2],[x1,0,z2]],'url(#glassF)'));
+    out.push(ln([(x1+x2)/2,0,z1],[(x1+x2)/2,0,z2],'#9fb2ba',1));
+    out.push(poly([[x1,0,z1],[x2,0,z1],[x2,0,z2],[x1,0,z2]],'none',' stroke="'+C.frame+'" stroke-width="1.6"'));
+  }}})();
+  out.push(poly([[4.85,0,8.5],[7.15,0,8.5],[7.15,0,10.5],[4.85,0,10.5]],'url(#warm)',' opacity=".45"'));
+  // 临街空调机位：窗间墙垛内凹铝百叶（每两间共用一垛）
+  [4,8].forEach(function(px){for(var f=0;f<2;f++){var z1=5.25+f*3.3,z2=z1+1.95;
+    out.push(poly([[px-0.35,0,z1],[px+0.35,0,z1],[px+0.35,0,z2],[px-0.35,0,z2]],'#C3B79C'));
+    for(var zz=z1+0.22;zz<z2;zz+=0.3){out.push(ln([px-0.35,0,zz],[px+0.35,0,zz],'#8f8369',1));}
+    out.push(poly([[px-0.35,0,z1],[px+0.35,0,z1],[px+0.35,0,z2],[px-0.35,0,z2]],'none',' stroke="#6f6653" stroke-width="0.9"'));
+  }});
+  // parapet cap over facade (front, at Z=H3 for Y=0)
+  out.push(poly([[0,0,H3],[W,0,H3],[W,0,H3+0.35],[0,0,H3+0.35]],C.parapet));
+
+  // ---------- glass railing (terrace front edge, on top) ----------
+  out.push(poly([[0,0,H3+0.4],[W,0,H3+0.4],[W,0,H3+1.5],[0,0,H3+1.5]],'rgba(150,176,186,.30)'));
+  out.push(ln([0,0,H3+1.5],[W,0,H3+1.5],'#8a9aa0',2));
+  for(var xr=0;xr<=W;xr+=2){out.push(ln([xr,0,H3+0.4],[xr,0,H3+1.5],'#9fadb2',1,' opacity=".8"'));}
+
+  // crisp silhouette edges
+  out.push(ln([0,0,0],[0,0,H3],'#c8c0b1',1.5));
+  out.push(ln([W,0,0],[W,0,H3],'#b3ab9b',1.4));
+  out.push(ln([0,0,H3],[0,SB,H3],'#b59567',1.6));
+
+  // ---------- ENTOURAGE (front) ----------
+  function person(X,Y,scl,col){var f=pt(X,Y,0);var x=f[0],y=f[1];var h=32*scl;
+    return '<ellipse cx="'+x+'" cy="'+(y+2)+'" rx="'+(7*scl)+'" ry="2.4" fill="rgba(45,42,36,.18)"/>'
+      +'<circle cx="'+x+'" cy="'+(y-h)+'" r="'+(4.3*scl)+'" fill="'+col+'"/>'
+      +'<path d="M'+(x-4.6*scl)+' '+(y-h+7*scl)+' Q'+x+' '+(y-h+2*scl)+' '+(x+4.6*scl)+' '+(y-h+7*scl)+' L'+(x+3.3*scl)+' '+(y-6*scl)+' L'+(x-3.3*scl)+' '+(y-6*scl)+' Z" fill="'+col+'"/>'
+      +'<line x1="'+(x-1.7*scl)+'" y1="'+(y-6*scl)+'" x2="'+(x-2.3*scl)+'" y2="'+y+'" stroke="'+col+'" stroke-width="'+(2.5*scl)+'" stroke-linecap="round"/>'
+      +'<line x1="'+(x+1.7*scl)+'" y1="'+(y-6*scl)+'" x2="'+(x+2.5*scl)+'" y2="'+y+'" stroke="'+col+'" stroke-width="'+(2.5*scl)+'" stroke-linecap="round"/>';
+  }
+  // tree front-left (on sidewalk, beside building)
+  (function(){var b=pt(-2.4,-1.6,0);var tx=b[0],ty=b[1];
+    out.push('<ellipse cx="'+tx+'" cy="'+(ty+3)+'" rx="30" ry="7" fill="rgba(45,42,36,.16)"/>');
+    out.push('<line x1="'+tx+'" y1="'+ty+'" x2="'+tx+'" y2="'+(ty-44)+'" stroke="#6b5638" stroke-width="6" stroke-linecap="round"/>');
+    out.push('<circle cx="'+tx+'" cy="'+(ty-62)+'" r="33" fill="#7f9a58"/>');
+    out.push('<circle cx="'+(tx-21)+'" cy="'+(ty-48)+'" r="23" fill="#8aa662"/>');
+    out.push('<circle cx="'+(tx+20)+'" cy="'+(ty-50)+'" r="25" fill="#728c50"/>');
+  })();
+  out.push(person(5.5,-3.6,1.05,'#3f4a52'));
+  out.push(person(9,-4.4,1.0,'#8a5a44'));
+  out.push(person(12.6,-3.2,1.02,'#495562'));
+  // car parked at right curb
+  (function(){var a=pt(19,-2.6,0);var x=a[0],y=a[1];
+    out.push('<ellipse cx="'+(x+26)+'" cy="'+(y+5)+'" rx="46" ry="8" fill="rgba(45,42,36,.15)"/>');
+    out.push('<path d="M'+x+' '+y+' l10 -20 l40 -3 l14 23 Z" fill="#93a3ac"/>');
+    out.push('<path d="M'+(x-4)+' '+y+' l6 -16 l58 0 l8 16 Z" fill="#4d5a63"/>');
+    out.push('<circle cx="'+(x+10)+'" cy="'+(y+2)+'" r="8" fill="#2b2f33"/><circle cx="'+(x+52)+'" cy="'+(y+2)+'" r="8" fill="#2b2f33"/>');
+    out.push('<circle cx="'+(x+10)+'" cy="'+(y+2)+'" r="3.4" fill="#98a0a6"/><circle cx="'+(x+52)+'" cy="'+(y+2)+'" r="3.4" fill="#98a0a6"/>');
+  })();
+
+  var defs='<defs>'
+    +'<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FBEDE"/><stop offset=".55" stop-color="#C7DEE8"/><stop offset="1" stop-color="#EDF2EE"/></linearGradient>'
+    +'<radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF6E2" stop-opacity=".95"/><stop offset="1" stop-color="#FFF6E2" stop-opacity="0"/></radialGradient>'
+    +'<linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DAD4C8"/><stop offset="1" stop-color="#C0B9AB"/></linearGradient>'
+    +'<linearGradient id="renderF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3EFE7"/><stop offset="1" stop-color="#E4DED2"/></linearGradient>'
+    +'<linearGradient id="glassF" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#BBD0D9"/><stop offset=".5" stop-color="#93A9B4"/><stop offset=".5" stop-color="#88A2AE"/><stop offset="1" stop-color="#A9C1CB"/></linearGradient>'
+    +'<linearGradient id="glassS" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#829aa4"/><stop offset="1" stop-color="#6d8690"/></linearGradient>'
+    +'<linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE3B0"/><stop offset="1" stop-color="#E7BE78"/></linearGradient>'
+    +'</defs>';
+  document.getElementById('scene').innerHTML = defs + out.join('');
+})();
+</script>

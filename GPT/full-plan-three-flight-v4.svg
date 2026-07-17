@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2360" height="1450" viewBox="0 0 2360 1450">
+  <title>16m×15m商铺民宿完整三跑楼梯方案V4</title>
+  <desc>一层、二层、三层分别绘制，含三跑主楼梯、电梯、第二疏散楼梯、门扇开启方向、卫生间、客房家具和前后阳台。</desc>
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#102a4c}
+      .title{font-size:32px;font-weight:800}.sub{font-size:17px;fill:#566b85}.head{font-size:25px;font-weight:800}
+      .label{font-size:17px;font-weight:700}.small{font-size:14px}.tiny{font-size:12px}.note{font-size:16px}
+      .wall{fill:none;stroke:#183b66;stroke-width:4}.part{fill:none;stroke:#526c8b;stroke-width:2.2}
+      .grid{fill:none;stroke:#9cb0c8;stroke-width:1.4;stroke-dasharray:7 7}.window{stroke:#0878e5;stroke-width:5}
+      .door{fill:none;stroke:#183b66;stroke-width:1.8}.san{fill:#e4f8fb;stroke:#00a2b8;stroke-width:1.8}
+      .bed{fill:#f7f9fc;stroke:#6b7e98;stroke-width:1.6}.furn{fill:#fff8e9;stroke:#ad7b2b;stroke-width:1.4}
+      .core{fill:#e7f2ff;stroke:#0878e5;stroke-width:2.5}.escape{fill:#fff0ee;stroke:#d43f35;stroke-width:2.5}
+      .lift{fill:#ffe5bf;stroke:#e76f00;stroke-width:2.5}.corr{fill:#fff2b5;stroke:#e1a300;stroke-width:1.8}
+      .bal{fill:#dff6ff;stroke:#0878e5;stroke-width:2;stroke-dasharray:7 5}.shop{fill:#eff9f2}.store{fill:#fff8ed}
+      .dim{stroke:#65768b;stroke-width:1.3;marker-start:url(#dimArrow);marker-end:url(#dimArrow)}
+      .warn{fill:#c62e25;font-size:16px;font-weight:700}.ok{fill:#096b45;font-size:16px;font-weight:700}
+    </style>
+    <marker id="dimArrow" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7Z" fill="#65768b"/></marker>
+    <marker id="upArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#0878e5"/></marker>
+    <g id="bed">
+      <rect x="0" y="0" width="54" height="70" rx="4" class="bed"/><rect x="4" y="5" width="46" height="17" rx="3" fill="#dce4ee" stroke="#6b7e98"/>
+      <line x1="27" y1="23" x2="27" y2="67" stroke="#c6d0dc"/>
+    </g>
+    <g id="wc">
+      <ellipse cx="10" cy="12" rx="8" ry="11" fill="white" stroke="#0097ad" stroke-width="1.5"/><rect x="3" y="0" width="14" height="6" rx="2" fill="white" stroke="#0097ad"/>
+    </g>
+    <g id="basin"><rect x="0" y="0" width="22" height="13" rx="5" fill="white" stroke="#0097ad" stroke-width="1.4"/><circle cx="11" cy="6" r="2" fill="#0097ad"/></g>
+    <g id="desk"><rect x="0" y="0" width="40" height="14" class="furn"/><rect x="12" y="18" width="16" height="12" rx="3" fill="#fff" stroke="#ad7b2b"/></g>
+    <g id="table"><circle cx="18" cy="18" r="13" fill="#fff" stroke="#71859e"/><circle cx="18" cy="0" r="6" fill="#fff" stroke="#71859e"/><circle cx="0" cy="18" r="6" fill="#fff" stroke="#71859e"/><circle cx="36" cy="18" r="6" fill="#fff" stroke="#71859e"/></g>
+  </defs>
+
+  <rect width="2360" height="1450" fill="#f7f9fc"/>
+  <text x="1180" y="48" text-anchor="middle" class="title">商铺＋民宿完整平面 V4：主楼梯改为三跑</text>
+  <text x="1180" y="78" text-anchor="middle" class="sub">开间16m、主体进深15m；二、三层前后各挑1.5m开放阳台｜临街方向均在图上方</text>
+
+  <!-- 一层 -->
+  <g id="floor1">
+    <text x="342" y="125" text-anchor="middle" class="head">一层｜商铺＋独立住宿入口</text>
+    <rect x="70" y="165" width="544" height="55" rx="8" fill="#d9dee6"/><line x1="95" y1="193" x2="590" y2="193" stroke="white" stroke-width="4" stroke-dasharray="28 18"/>
+    <text x="342" y="158" text-anchor="middle" class="label">临街道路</text>
+    <line x1="70" y1="235" x2="614" y2="235" class="dim"/><text x="342" y="229" text-anchor="middle" class="small">16m＝4＋4＋4＋4m</text>
+
+    <!-- fills -->
+    <rect x="70" y="250" width="136" height="170" class="core"/>
+    <rect x="206" y="250" width="408" height="340" class="shop"/>
+    <rect x="70" y="420" width="136" height="170" fill="#fff8dc"/>
+    <rect x="70" y="590" width="544" height="170" class="store"/>
+
+    <!-- overall/grid -->
+    <rect x="70" y="250" width="544" height="510" class="wall"/>
+    <line x1="206" y1="250" x2="206" y2="760" class="part"/><line x1="342" y1="250" x2="342" y2="760" class="part"/>
+    <line x1="478" y1="250" x2="478" y2="760" class="part"/><line x1="70" y1="420" x2="614" y2="420" class="grid"/>
+    <line x1="70" y1="590" x2="614" y2="590" class="part"/>
+
+    <!-- main three-flight stair 4x5 -->
+    <rect x="81" y="261" width="114" height="148" fill="#f7fbff" stroke="#0878e5" stroke-width="2"/>
+    <rect x="84" y="298" width="32" height="75" fill="#e7f2ff" stroke="#0878e5"/>
+    <rect x="122" y="298" width="32" height="75" fill="#e7f2ff" stroke="#0878e5"/>
+    <rect x="160" y="298" width="32" height="75" fill="#e7f2ff" stroke="#0878e5"/>
+    <g stroke="#75aeef"><line x1="84" y1="310" x2="116" y2="310"/><line x1="84" y1="322" x2="116" y2="322"/><line x1="84" y1="334" x2="116" y2="334"/><line x1="84" y1="346" x2="116" y2="346"/><line x1="122" y1="310" x2="154" y2="310"/><line x1="122" y1="322" x2="154" y2="322"/><line x1="122" y1="334" x2="154" y2="334"/><line x1="122" y1="346" x2="154" y2="346"/><line x1="160" y1="310" x2="192" y2="310"/><line x1="160" y1="322" x2="192" y2="322"/><line x1="160" y1="334" x2="192" y2="334"/><line x1="160" y1="346" x2="192" y2="346"/></g>
+    <path d="M100 367V307M138 307V367M176 367V307" fill="none" stroke="#0878e5" stroke-width="2.4" marker-end="url(#upArrow)"/>
+    <text x="138" y="283" text-anchor="middle" class="label">三跑主楼梯</text><text x="138" y="398" text-anchor="middle" class="tiny">27级＝9＋9＋9｜上层落后平台</text>
+    <!-- stair street door -->
+    <line x1="96" y1="250" x2="128" y2="250" stroke="white" stroke-width="7"/><path d="M96 250V218A32 32 0 0 1 128 250" class="door"/><text x="138" y="243" class="tiny">住宿独立入口</text>
+
+    <!-- elevator lobby and lift -->
+    <text x="138" y="444" text-anchor="middle" class="label">2.6m电梯前室</text><text x="138" y="463" text-anchor="middle" class="tiny">候梯＋楼梯后平台</text>
+    <rect x="70" y="508" width="82" height="82" class="lift"/><line x1="72" y1="510" x2="150" y2="588" stroke="#e76f00"/><line x1="150" y1="510" x2="72" y2="588" stroke="#e76f00"/>
+    <text x="111" y="544" text-anchor="middle" class="label">电梯井</text><text x="111" y="564" text-anchor="middle" class="tiny">2.4×2.4m</text>
+    <line x1="96" y1="508" x2="130" y2="508" stroke="white" stroke-width="7"/><line x1="96" y1="508" x2="130" y2="508" stroke="#e76f00" stroke-dasharray="5 4"/>
+    <path d="M206 457H176A30 30 0 0 0 206 487" class="door"/><text x="169" y="480" text-anchor="end" class="tiny">前室防火门</text>
+
+    <!-- shops -->
+    <text x="274" y="292" text-anchor="middle" class="head">商铺 A</text><text x="410" y="292" text-anchor="middle" class="head">商铺 B</text><text x="546" y="292" text-anchor="middle" class="head">商铺 C</text>
+    <g class="furn"><rect x="224" y="315" width="44" height="18"/><rect x="360" y="315" width="44" height="18"/><rect x="496" y="315" width="44" height="18"/></g>
+    <text x="246" y="328" text-anchor="middle" class="tiny">收银台</text><text x="382" y="328" text-anchor="middle" class="tiny">收银台</text><text x="518" y="328" text-anchor="middle" class="tiny">收银台</text>
+    <g fill="#fff" stroke="#75869a"><rect x="222" y="355" width="16" height="88"/><rect x="306" y="355" width="16" height="88"/><rect x="358" y="355" width="16" height="88"/><rect x="442" y="355" width="16" height="88"/><rect x="494" y="355" width="16" height="88"/><rect x="578" y="355" width="16" height="88"/></g>
+    <g><line x1="225" y1="250" x2="315" y2="250" class="window"/><line x1="361" y1="250" x2="451" y2="250" class="window"/><line x1="497" y1="250" x2="587" y2="250" class="window"/>
+      <path d="M245 250V280A30 30 0 0 1 275 250" class="door"/><path d="M381 250V280A30 30 0 0 1 411 250" class="door"/><path d="M517 250V280A30 30 0 0 1 547 250" class="door"/></g>
+
+    <!-- secondary escape stair -->
+    <rect x="519" y="420" width="95" height="119" class="escape"/><rect x="530" y="431" width="73" height="89" fill="#fff8f7" stroke="#d43f35"/>
+    <path d="M538 503V444H562V503H586V444" fill="none" stroke="#d43f35" stroke-width="2.6" marker-end="url(#upArrow)"/>
+    <text x="566" y="477" text-anchor="middle" class="tiny">四跑梯井</text><text x="566" y="557" text-anchor="middle" class="small">第二疏散楼梯</text>
+    <path d="M519 477H489A30 30 0 0 0 519 507" class="door"/>
+
+    <!-- rear stores/offices with toilets and doors -->
+    <text x="138" y="625" text-anchor="middle" class="label">核心后勤/设备</text><text x="274" y="625" text-anchor="middle" class="label">A仓库/办公室</text><text x="410" y="625" text-anchor="middle" class="label">B仓库/办公室</text><text x="546" y="625" text-anchor="middle" class="label">C仓库/办公室</text>
+    <g fill="#fff" stroke="#75869a"><rect x="88" y="646" width="16" height="82"/><rect x="118" y="646" width="16" height="82"/><rect x="222" y="646" width="16" height="82"/><rect x="252" y="646" width="16" height="82"/><rect x="358" y="646" width="16" height="82"/><rect x="388" y="646" width="16" height="82"/><rect x="494" y="646" width="16" height="82"/><rect x="524" y="646" width="16" height="82"/></g>
+    <g class="san"><rect x="286" y="682" width="56" height="78"/><rect x="422" y="682" width="56" height="78"/><rect x="558" y="682" width="56" height="78"/></g>
+    <g><use href="#wc" x="310" y="715"/><use href="#basin" x="291" y="691"/><use href="#wc" x="446" y="715"/><use href="#basin" x="427" y="691"/><use href="#wc" x="582" y="715"/><use href="#basin" x="563" y="691"/></g>
+    <g><path d="M286 715H262A24 24 0 0 1 286 739" class="door"/><path d="M422 715H398A24 24 0 0 1 422 739" class="door"/><path d="M558 715H534A24 24 0 0 1 558 739" class="door"/>
+      <path d="M254 590V618A28 28 0 0 0 282 590" class="door"/><path d="M390 590V618A28 28 0 0 0 418 590" class="door"/><path d="M526 590V618A28 28 0 0 0 554 590" class="door"/></g>
+    <line x1="640" y1="250" x2="640" y2="760" class="dim"/><text x="660" y="505" class="small" transform="rotate(90 660 505)">主体进深15m＝5＋5＋5m</text>
+  </g>
+
+  <!-- 二层 -->
+  <g id="floor2">
+    <text x="1102" y="125" text-anchor="middle" class="head">二层｜6间小客房＋公共洗衣</text>
+    <rect x="830" y="200" width="544" height="51" class="bal"/><rect x="830" y="761" width="544" height="51" class="bal"/>
+    <text x="1102" y="222" text-anchor="middle" class="label">前挑1.5m开放阳台</text><text x="1102" y="793" text-anchor="middle" class="label">后挑1.5m开放阳台</text>
+    <rect x="830" y="251" width="544" height="510" fill="#f4f7fb" class="wall"/>
+    <line x1="966" y1="251" x2="966" y2="761" class="part"/><line x1="1102" y1="251" x2="1102" y2="761" class="part"/><line x1="1238" y1="251" x2="1238" y2="761" class="part"/>
+    <line x1="830" y1="421" x2="1374" y2="421" class="grid"/><line x1="830" y1="591" x2="1374" y2="591" class="grid"/>
+
+    <!-- three-flight stair / rear upper landing -->
+    <rect x="830" y="251" width="136" height="170" class="core"/><rect x="840" y="261" width="116" height="150" fill="#f7fbff" stroke="#0878e5"/>
+    <g fill="#e7f2ff" stroke="#0878e5"><rect x="843" y="301" width="32" height="70"/><rect x="882" y="301" width="32" height="70"/><rect x="921" y="301" width="32" height="70"/></g>
+    <g stroke="#75aeef"><path d="M843 313H875M843 325H875M843 337H875M843 349H875M882 313H914M882 325H914M882 337H914M882 349H914M921 313H953M921 325H953M921 337H953M921 349H953"/></g>
+    <path d="M859 365V307M898 307V365M937 365V307" fill="none" stroke="#0878e5" stroke-width="2.2" marker-end="url(#upArrow)"/>
+    <text x="898" y="282" text-anchor="middle" class="label">三跑主梯</text><text x="898" y="399" text-anchor="middle" class="tiny">二层出口在后平台</text>
+    <rect x="830" y="421" width="136" height="88" fill="#fff2b5" stroke="#e1a300"/><text x="898" y="451" text-anchor="middle" class="label">电梯前室</text><text x="898" y="473" text-anchor="middle" class="tiny">候梯＋楼梯出口</text>
+    <rect x="830" y="509" width="82" height="82" class="lift"/><line x1="832" y1="511" x2="910" y2="589" stroke="#e76f00"/><line x1="910" y1="511" x2="832" y2="589" stroke="#e76f00"/><text x="871" y="548" text-anchor="middle" class="label">电梯</text><text x="871" y="569" text-anchor="middle" class="tiny">2.4×2.4m</text>
+
+    <!-- corridor -->
+    <rect x="912" y="489" width="462" height="51" class="corr"/><text x="1143" y="520" text-anchor="middle" class="label">1.5m公共走道（客房门向房内开）</text>
+    <path d="M912 462H942A30 30 0 0 1 912 492" class="door"/>
+
+    <!-- front rooms 202 203 and common -->
+    <text x="1034" y="278" text-anchor="middle" class="label">202</text><text x="1170" y="278" text-anchor="middle" class="label">203</text><text x="1306" y="278" text-anchor="middle" class="label">公共洗衣/布草</text>
+    <use href="#bed" x="977" y="292"/><use href="#desk" x="1048" y="305"/><rect x="1048" y="353" width="42" height="17" class="furn"/><text x="1069" y="366" text-anchor="middle" class="tiny">衣柜</text>
+    <use href="#bed" x="1113" y="292"/><use href="#desk" x="1184" y="305"/><rect x="1184" y="353" width="42" height="17" class="furn"/><text x="1205" y="366" text-anchor="middle" class="tiny">衣柜</text>
+    <rect x="1249" y="292" width="52" height="34" rx="5" fill="white" stroke="#71859e"/><rect x="1310" y="292" width="52" height="34" rx="5" fill="white" stroke="#71859e"/><text x="1275" y="314" text-anchor="middle" class="tiny">洗</text><text x="1336" y="314" text-anchor="middle" class="tiny">烘</text><use href="#table" x="1288" y="348"/>
+    <!-- front baths and doors -->
+    <rect x="1046" y="421" width="56" height="68" class="san"/><rect x="1182" y="421" width="56" height="68" class="san"/><use href="#wc" x="1078" y="452"/><use href="#basin" x="1051" y="429"/><use href="#wc" x="1214" y="452"/><use href="#basin" x="1187" y="429"/>
+    <path d="M1015 489V461A28 28 0 0 0 1043 489" class="door"/><path d="M1151 489V461A28 28 0 0 0 1179 489" class="door"/><path d="M1046 447H1024A22 22 0 0 1 1046 469" class="door"/><path d="M1182 447H1160A22 22 0 0 1 1182 469" class="door"/>
+
+    <!-- secondary stair -->
+    <rect x="1279" y="421" width="95" height="119" class="escape"/><rect x="1290" y="432" width="73" height="88" fill="#fff8f7" stroke="#d43f35"/><path d="M1298 503V444H1322V503H1346V444" fill="none" stroke="#d43f35" stroke-width="2.5" marker-end="url(#upArrow)"/>
+    <text x="1326" y="475" text-anchor="middle" class="tiny">四跑梯井</text><path d="M1279 494H1251A28 28 0 0 0 1279 522" class="door"/><text x="1326" y="558" text-anchor="middle" class="small">第二疏散楼梯</text>
+
+    <!-- rear rooms -->
+    <text x="898" y="620" text-anchor="middle" class="label">204</text><text x="1034" y="568" text-anchor="middle" class="label">205</text><text x="1170" y="568" text-anchor="middle" class="label">206</text><text x="1306" y="568" text-anchor="middle" class="label">207</text>
+    <use href="#bed" x="841" y="648"/><use href="#desk" x="910" y="672"/><use href="#bed" x="977" y="650"/><use href="#desk" x="1048" y="672"/><use href="#bed" x="1113" y="650"/><use href="#desk" x="1184" y="672"/><use href="#bed" x="1249" y="650"/><use href="#desk" x="1320" y="672"/>
+    <g class="furn"><rect x="918" y="728" width="38" height="16"/><rect x="1054" y="728" width="38" height="16"/><rect x="1190" y="728" width="38" height="16"/><rect x="1326" y="728" width="38" height="16"/></g>
+    <g class="san"><rect x="912" y="591" width="54" height="60"/><rect x="1048" y="540" width="54" height="60"/><rect x="1184" y="540" width="54" height="60"/><rect x="1320" y="540" width="54" height="60"/></g>
+    <g><use href="#wc" x="940" y="620"/><use href="#basin" x="916" y="597"/><use href="#wc" x="1076" y="568"/><use href="#basin" x="1052" y="546"/><use href="#wc" x="1212" y="568"/><use href="#basin" x="1188" y="546"/><use href="#wc" x="1348" y="568"/><use href="#basin" x="1324" y="546"/></g>
+    <g><path d="M884 591V619A28 28 0 0 1 912 591" class="door"/><path d="M1020 540V568A28 28 0 0 1 1048 540" class="door"/><path d="M1156 540V568A28 28 0 0 1 1184 540" class="door"/><path d="M1292 540V568A28 28 0 0 1 1320 540" class="door"/>
+      <path d="M912 616H934A22 22 0 0 0 912 638" class="door"/><path d="M1048 565H1070A22 22 0 0 0 1048 587" class="door"/><path d="M1184 565H1206A22 22 0 0 0 1184 587" class="door"/><path d="M1320 565H1342A22 22 0 0 0 1320 587" class="door"/></g>
+    <line x1="850" y1="251" x2="946" y2="251" class="window"/><line x1="986" y1="251" x2="1082" y2="251" class="window"/><line x1="1122" y1="251" x2="1218" y2="251" class="window"/><line x1="850" y1="761" x2="946" y2="761" class="window"/><line x1="986" y1="761" x2="1082" y2="761" class="window"/><line x1="1122" y1="761" x2="1218" y2="761" class="window"/><line x1="1258" y1="761" x2="1354" y2="761" class="window"/>
+  </g>
+
+  <!-- 三层 -->
+  <g id="floor3">
+    <text x="1852" y="125" text-anchor="middle" class="head">三层｜6间小客房＋侧向连接廊</text>
+    <rect x="1580" y="200" width="544" height="51" class="bal"/><rect x="1580" y="761" width="544" height="51" class="bal"/>
+    <text x="1852" y="222" text-anchor="middle" class="label">前挑1.5m开放阳台</text><text x="1852" y="793" text-anchor="middle" class="label">后挑1.5m开放阳台</text>
+    <rect x="1580" y="251" width="544" height="510" fill="#f4f7fb" class="wall"/>
+    <line x1="1716" y1="251" x2="1716" y2="761" class="part"/><line x1="1852" y1="540" x2="1852" y2="761" class="part"/><line x1="1988" y1="540" x2="1988" y2="761" class="part"/>
+    <line x1="1580" y1="421" x2="2124" y2="421" class="grid"/><line x1="1580" y1="591" x2="2124" y2="591" class="grid"/>
+
+    <!-- stair with front upper landing -->
+    <rect x="1580" y="251" width="136" height="170" class="core"/><rect x="1590" y="261" width="116" height="150" fill="#f7fbff" stroke="#0878e5"/>
+    <g fill="#e7f2ff" stroke="#0878e5"><rect x="1593" y="301" width="32" height="70"/><rect x="1632" y="301" width="32" height="70"/><rect x="1671" y="301" width="32" height="70"/></g>
+    <g stroke="#75aeef"><path d="M1593 313H1625M1593 325H1625M1593 337H1625M1593 349H1625M1632 313H1664M1632 325H1664M1632 337H1664M1632 349H1664M1671 313H1703M1671 325H1703M1671 337H1703M1671 349H1703"/></g>
+    <path d="M1609 307V365M1648 365V307M1687 307V365" fill="none" stroke="#0878e5" stroke-width="2.2" marker-end="url(#upArrow)"/>
+    <text x="1648" y="282" text-anchor="middle" class="label">三跑主梯</text><text x="1648" y="399" text-anchor="middle" class="tiny">三层出口在前平台</text>
+    <!-- side connector -->
+    <rect x="1716" y="251" width="41" height="238" fill="#d8f6df" stroke="#1c9b55" stroke-width="2"/>
+    <path d="M1736 280V468" stroke="#1c9b55" stroke-width="2.5" marker-end="url(#upArrow)"/><text x="1743" y="374" class="tiny" transform="rotate(90 1743 374)">1.2m侧向连接通道</text>
+    <path d="M1716 280H1688A28 28 0 0 0 1716 308" class="door"/>
+
+    <!-- adjusted front partitions -->
+    <line x1="1878" y1="251" x2="1878" y2="489" class="part"/><line x1="2001" y1="251" x2="2001" y2="489" class="part"/>
+    <text x="1817" y="278" text-anchor="middle" class="label">302</text><text x="1940" y="278" text-anchor="middle" class="label">303</text><text x="2062" y="278" text-anchor="middle" class="label">公共休息/布草</text>
+    <use href="#bed" x="1765" y="292"/><use href="#desk" x="1830" y="312"/><rect x="1830" y="357" width="38" height="16" class="furn"/>
+    <use href="#bed" x="1887" y="292"/><use href="#desk" x="1952" y="312"/><rect x="1952" y="357" width="38" height="16" class="furn"/>
+    <use href="#table" x="2022" y="305"/><rect x="2018" y="357" width="88" height="30" rx="5" fill="white" stroke="#71859e"/><text x="2062" y="377" text-anchor="middle" class="tiny">沙发/茶几</text>
+    <rect x="1822" y="421" width="56" height="68" class="san"/><rect x="1945" y="421" width="56" height="68" class="san"/><use href="#wc" x="1850" y="452"/><use href="#basin" x="1827" y="429"/><use href="#wc" x="1973" y="452"/><use href="#basin" x="1950" y="429"/>
+    <path d="M1794 489V461A28 28 0 0 0 1822 489" class="door"/><path d="M1917 489V461A28 28 0 0 0 1945 489" class="door"/><path d="M1822 447H1800A22 22 0 0 1 1822 469" class="door"/><path d="M1945 447H1923A22 22 0 0 1 1945 469" class="door"/>
+
+    <!-- lobby lift corridor -->
+    <rect x="1580" y="421" width="136" height="88" fill="#fff2b5" stroke="#e1a300"/><text x="1648" y="452" text-anchor="middle" class="label">电梯前室</text><text x="1648" y="475" text-anchor="middle" class="tiny">由侧廊接主楼梯</text>
+    <rect x="1580" y="509" width="82" height="82" class="lift"/><line x1="1582" y1="511" x2="1660" y2="589" stroke="#e76f00"/><line x1="1660" y1="511" x2="1582" y2="589" stroke="#e76f00"/><text x="1621" y="548" text-anchor="middle" class="label">电梯</text><text x="1621" y="569" text-anchor="middle" class="tiny">2.4×2.4m</text>
+    <rect x="1662" y="489" width="462" height="51" class="corr"/><text x="1893" y="520" text-anchor="middle" class="label">1.5m公共走道</text>
+
+    <!-- secondary stair -->
+    <rect x="2029" y="421" width="95" height="119" class="escape"/><rect x="2040" y="432" width="73" height="88" fill="#fff8f7" stroke="#d43f35"/><path d="M2048 503V444H2072V503H2096V444" fill="none" stroke="#d43f35" stroke-width="2.5" marker-end="url(#upArrow)"/>
+    <text x="2076" y="475" text-anchor="middle" class="tiny">四跑梯井</text><path d="M2029 494H2001A28 28 0 0 0 2029 522" class="door"/><text x="2076" y="558" text-anchor="middle" class="small">第二疏散楼梯</text>
+
+    <!-- rear rooms -->
+    <text x="1648" y="620" text-anchor="middle" class="label">304</text><text x="1784" y="568" text-anchor="middle" class="label">305</text><text x="1920" y="568" text-anchor="middle" class="label">306</text><text x="2056" y="568" text-anchor="middle" class="label">307</text>
+    <use href="#bed" x="1591" y="648"/><use href="#desk" x="1660" y="672"/><use href="#bed" x="1727" y="650"/><use href="#desk" x="1798" y="672"/><use href="#bed" x="1863" y="650"/><use href="#desk" x="1934" y="672"/><use href="#bed" x="1999" y="650"/><use href="#desk" x="2070" y="672"/>
+    <g class="furn"><rect x="1668" y="728" width="38" height="16"/><rect x="1804" y="728" width="38" height="16"/><rect x="1940" y="728" width="38" height="16"/><rect x="2076" y="728" width="38" height="16"/></g>
+    <g class="san"><rect x="1662" y="591" width="54" height="60"/><rect x="1798" y="540" width="54" height="60"/><rect x="1934" y="540" width="54" height="60"/><rect x="2070" y="540" width="54" height="60"/></g>
+    <g><use href="#wc" x="1690" y="620"/><use href="#basin" x="1666" y="597"/><use href="#wc" x="1826" y="568"/><use href="#basin" x="1802" y="546"/><use href="#wc" x="1962" y="568"/><use href="#basin" x="1938" y="546"/><use href="#wc" x="2098" y="568"/><use href="#basin" x="2074" y="546"/></g>
+    <g><path d="M1634 591V619A28 28 0 0 1 1662 591" class="door"/><path d="M1770 540V568A28 28 0 0 1 1798 540" class="door"/><path d="M1906 540V568A28 28 0 0 1 1934 540" class="door"/><path d="M2042 540V568A28 28 0 0 1 2070 540" class="door"/>
+      <path d="M1662 616H1684A22 22 0 0 0 1662 638" class="door"/><path d="M1798 565H1820A22 22 0 0 0 1798 587" class="door"/><path d="M1934 565H1956A22 22 0 0 0 1934 587" class="door"/><path d="M2070 565H2092A22 22 0 0 0 2070 587" class="door"/></g>
+    <line x1="1600" y1="251" x2="1696" y2="251" class="window"/><line x1="1772" y1="251" x2="1862" y2="251" class="window"/><line x1="1894" y1="251" x2="1985" y2="251" class="window"/><line x1="1600" y1="761" x2="1696" y2="761" class="window"/><line x1="1736" y1="761" x2="1832" y2="761" class="window"/><line x1="1872" y1="761" x2="1968" y2="761" class="window"/><line x1="2008" y1="761" x2="2104" y2="761" class="window"/>
+  </g>
+
+  <!-- callouts and notes -->
+  <rect x="70" y="870" width="2180" height="500" rx="14" fill="white" stroke="#b5c1d1" stroke-width="2"/>
+  <text x="100" y="912" class="head">三跑版结论与楼梯控制</text>
+  <rect x="100" y="935" width="650" height="170" rx="10" fill="#f5f9ff" stroke="#9bb8df"/>
+  <text x="125" y="970" class="label">楼梯计算（按民宿公共楼梯的保守参数试排）</text>
+  <text x="125" y="1002" class="note">• 一层至二层暂按层高4.00m：27级＝9＋9＋9，单级148.1mm</text>
+  <text x="125" y="1032" class="note">• 二层至三层暂按层高3.30m：21级＝7＋7＋7，单级157.1mm</text>
+  <text x="125" y="1062" class="note">• 踏面按260mm；每跑净宽暂按1.10m；平台净深按不小于1.20m</text>
+  <text x="125" y="1092" class="note">• 楼梯间约4.0×5.0m，实际净宽需扣墙、抹灰、扶手后复核</text>
+
+  <rect x="785" y="935" width="670" height="170" rx="10" fill="#f2fbf6" stroke="#85c7a3"/>
+  <text x="810" y="970" class="label">这版能成立的地方</text>
+  <text x="810" y="1002" class="note">• 一层入口完全独立，商铺与民宿客流不混行</text>
+  <text x="810" y="1032" class="note">• 二层楼梯后平台直接接2.6m电梯前室，关系顺畅</text>
+  <text x="810" y="1062" class="note">• 二、三层各保留6间带独立卫生间的小客房</text>
+  <text x="810" y="1092" class="note">• 右侧第二疏散楼梯保留；前后挑出部分只作开放阳台</text>
+
+  <rect x="1490" y="935" width="730" height="170" rx="10" fill="#fff5f3" stroke="#e6a19b"/>
+  <text x="1515" y="970" class="label">必须接受的代价</text>
+  <text x="1515" y="1002" class="warn">• 主楼梯占满临街左侧整间4m开间，一层只剩3个完整商铺门面</text>
+  <text x="1515" y="1032" class="warn">• 三层出口落在前平台，必须借相邻开间留1.20m侧向连接廊</text>
+  <text x="1515" y="1062" class="note">• 三层前排隔墙需错开柱网布置，302/303净宽要结合柱截面复核</text>
+  <text x="1515" y="1092" class="note">• 原基础、5m轴线梁和楼梯洞口均须结构工程师重新校核</text>
+
+  <text x="100" y="1150" class="label">门与设备表达：</text>
+  <text x="235" y="1150" class="note">弧线为门扇开启方向；客房门向房内开启，卫生间门向客房开启；楼梯间防火门的等级、开启方向和闭门器由消防设计确定。</text>
+  <text x="100" y="1190" class="label">卫生与管线：</text>
+  <text x="235" y="1190" class="note">卫生间集中靠公共走道布置，淋浴区应降板并设防水坎；上下层排水立管应对位，不得在既有基础梁上随意开洞。</text>
+  <text x="100" y="1230" class="label">阳台：</text><text x="165" y="1230" class="note">前后1.5m仅按开放阳台使用，放轻型桌椅和空调外机；不得封闭成客房，也不放卫生间、楼梯或固定重设备。</text>
+  <text x="100" y="1270" class="label">消防：</text><text x="165" y="1270" class="note">客房、走道、楼梯间需按当地审查配置报警、应急照明、疏散标志、灭火器及必要的喷淋；两个楼梯出口均不得被商铺占用。</text>
+  <text x="100" y="1320" class="warn">本图是用于确认布局关系的方案图，不是施工图。现有基础已完成，修改楼梯洞口和梁板前必须让注册建筑师、结构工程师及当地消防审查人员现场复核。</text>
+  <text x="2215" y="1405" text-anchor="end" class="small">V4｜三跑完整试排｜2026-07</text>
+</svg>

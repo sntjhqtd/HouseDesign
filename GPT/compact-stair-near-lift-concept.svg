@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#52606d"/>
+    </marker>
+    <style>
+      text { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; fill:#172b4d; }
+      .title { font-size:28px; font-weight:700; }
+      .sub { font-size:18px; fill:#5e6c84; }
+      .head { font-size:22px; font-weight:700; }
+      .label { font-size:18px; font-weight:650; }
+      .small { font-size:15px; }
+      .dim { font-size:15px; fill:#52606d; }
+      .outline { fill:#fff; stroke:#344563; stroke-width:3; }
+      .axis { stroke:#7a869a; stroke-width:2; stroke-dasharray:8 7; }
+      .dimension { stroke:#52606d; stroke-width:1.5; marker-start:url(#arrow); marker-end:url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="#f7f9fc"/>
+  <text x="600" y="43" text-anchor="middle" class="title">楼梯移至电梯前方：可行性概念</text>
+  <text x="600" y="72" text-anchor="middle" class="sub">推荐研究“后置交通核心＋临街窄通道”，但必须重新设计楼板洞口和轴线梁</text>
+
+  <!-- Street -->
+  <rect x="140" y="105" width="560" height="58" rx="8" fill="#dfe3e8"/>
+  <line x1="165" y1="134" x2="675" y2="134" stroke="#fff" stroke-width="4" stroke-dasharray="26 16"/>
+  <text x="420" y="128" text-anchor="middle" class="label">临街道路</text>
+  <text x="420" y="151" text-anchor="middle" class="small">这里只放大左侧两个4m开间、前两节5m进深</text>
+
+  <!-- 8m x 10m at 70 px/m: x=140..700 y=190..890 -->
+  <rect x="140" y="190" width="560" height="700" class="outline"/>
+  <line x1="420" y1="190" x2="420" y2="890" class="axis"/>
+  <line x1="140" y1="540" x2="700" y2="540" class="axis"/>
+
+  <!-- Street entrance corridor: 1.5m wide, 4.4m deep -->
+  <rect x="140" y="190" width="105" height="308" fill="#d9eafd" stroke="#0c66e4" stroke-width="3"/>
+  <path d="M192 215V470" stroke="#0c66e4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="192" y="310" text-anchor="middle" class="label" transform="rotate(-90 192 310)">住宅入口通道 约1.5m</text>
+
+  <!-- Reclaimed storefront -->
+  <rect x="245" y="190" width="175" height="308" fill="#d8f3dc" stroke="#2d9d58" stroke-width="3"/>
+  <text x="332" y="310" text-anchor="middle" class="label">释放给商铺</text>
+  <text x="332" y="339" text-anchor="middle" class="small">新增临街宽约2.5m</text>
+  <text x="332" y="365" text-anchor="middle" class="small">可与右侧商铺合并</text>
+
+  <!-- Adjacent shop -->
+  <rect x="420" y="190" width="280" height="350" fill="#eaf7ed" opacity="0.85" stroke="#69a84f" stroke-width="2"/>
+  <text x="560" y="325" text-anchor="middle" class="label">相邻商铺区域</text>
+  <text x="560" y="353" text-anchor="middle" class="small">前部商业可形成更完整门面</text>
+
+  <!-- Proposed compact stair envelope: 4m x 3.2m, y=4.4..7.6m -->
+  <rect x="140" y="498" width="280" height="224" fill="#cfe7ff" stroke="#0c66e4" stroke-width="4"/>
+  <text x="280" y="573" text-anchor="middle" class="head">三跑/四跑楼梯研究范围</text>
+  <text x="280" y="602" text-anchor="middle" class="label">约4.0×3.2m</text>
+  <text x="280" y="628" text-anchor="middle" class="small">比原2.6m前室向前伸约0.6m</text>
+
+  <!-- Symbolic four-flight spiral around well -->
+  <rect x="220" y="646" width="120" height="52" fill="#fff" stroke="#0c66e4" stroke-width="2"/>
+  <rect x="244" y="655" width="72" height="34" fill="#e9ecef" stroke="#7a869a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M225 691V651H333V695" fill="none" stroke="#0c66e4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="280" y="676" text-anchor="middle" class="small">多跑转折示意</text>
+
+  <!-- Existing elevator shaft -->
+  <!-- x 0..2.4m, y 7.6..10m -->
+  <rect x="140" y="722" width="168" height="168" fill="#ffe2bd" stroke="#e56910" stroke-width="4"/>
+  <line x1="142" y1="724" x2="306" y2="888" stroke="#e56910" stroke-width="2"/>
+  <line x1="306" y1="724" x2="142" y2="888" stroke="#e56910" stroke-width="2"/>
+  <text x="224" y="793" text-anchor="middle" class="label">现有电梯井</text>
+  <text x="224" y="822" text-anchor="middle" class="small">2.4×2.4m</text>
+  <line x1="183" y1="722" x2="264" y2="722" stroke="#fff" stroke-width="9"/>
+  <line x1="183" y1="722" x2="264" y2="722" stroke="#e56910" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- Shared landing at elevator door -->
+  <rect x="160" y="617" width="128" height="105" fill="#fff1b8" opacity="0.9" stroke="#e2a400" stroke-width="3"/>
+  <text x="224" y="658" text-anchor="middle" class="small">楼层平台兼</text>
+  <text x="224" y="681" text-anchor="middle" class="small">电梯候梯平台</text>
+  <text x="224" y="704" text-anchor="middle" class="small">净空需专项复核</text>
+
+  <!-- Remaining space beside lift -->
+  <rect x="308" y="722" width="112" height="168" fill="#d8f3dc" stroke="#2d9d58" stroke-width="2"/>
+  <text x="364" y="792" text-anchor="middle" class="small">住宅/储物</text>
+  <text x="364" y="815" text-anchor="middle" class="small">或设备空间</text>
+
+  <!-- Other middle bay -->
+  <rect x="420" y="540" width="280" height="350" fill="#f1f8ee" opacity="0.85" stroke="#69a84f" stroke-width="2"/>
+  <text x="560" y="715" text-anchor="middle" class="label">商业后区或上层住宅空间</text>
+
+  <!-- Structural grid warning -->
+  <path d="M430 520L510 470" fill="none" stroke="#c9372c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="485" y="400" width="250" height="78" rx="8" fill="#fff" stroke="#c9372c" stroke-width="2"/>
+  <text x="500" y="430" class="small" fill="#c9372c">楼梯洞口跨过原5m轴线附近，</text>
+  <text x="500" y="455" class="small" fill="#c9372c">轴线梁必须由结构工程师重算。</text>
+
+  <!-- Dimension -->
+  <line x1="110" y1="498" x2="110" y2="722" class="dimension"/>
+  <text x="88" y="616" text-anchor="middle" class="dim" transform="rotate(-90 88 616)">核心约3.2m</text>
+
+  <!-- Feasibility box -->
+  <rect x="785" y="150" width="365" height="570" rx="12" fill="#fff" stroke="#b3bac5" stroke-width="2"/>
+  <text x="815" y="192" class="head">判断</text>
+  <text x="815" y="235" class="label" fill="#c9372c">仅用4.0×2.6m：不建议</text>
+  <text x="815" y="270" class="small">• 三跑楼梯的踏步段和平台通常放不下</text>
+  <text x="815" y="297" class="small">• 四跑即使勉强排下，也会堵住电梯门</text>
+  <text x="815" y="324" class="small">• 楼梯净高、平台和搬运条件容易不合格</text>
+
+  <text x="815" y="382" class="label" fill="#2d9d58">扩大到约4.0×3.0～3.2m：可研究</text>
+  <text x="815" y="417" class="small">• 三跑优先，四跑用于更高层高或更紧凑方案</text>
+  <text x="815" y="444" class="small">• 一个平台可与电梯候梯区合用</text>
+  <text x="815" y="471" class="small">• 临街只留约1.5m住宅入口通道</text>
+  <text x="815" y="498" class="small">• 可释放约2.5m临街宽度给商铺</text>
+
+  <text x="815" y="555" class="label">必须先确认</text>
+  <text x="815" y="590" class="small">1. 一层及上层准确层高</text>
+  <text x="815" y="617" class="small">2. 电梯门洞方向和厂家土建尺寸</text>
+  <text x="815" y="644" class="small">3. 原5m轴线梁、柱和地梁设计</text>
+  <text x="815" y="671" class="small">4. 楼梯是否只服务住宅及消防审查条件</text>
+
+  <text x="1160" y="860" text-anchor="end" class="small" fill="#6b778c">位置研究示意，不是可施工楼梯图</text>
+</svg>

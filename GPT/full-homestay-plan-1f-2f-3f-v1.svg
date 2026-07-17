@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1860" height="1080" viewBox="0 0 1860 1080">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#52606d"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#172b4d}
+      .title{font-size:30px;font-weight:700}.sub{font-size:17px;fill:#5e6c84}.head{font-size:22px;font-weight:700}.label{font-size:17px;font-weight:650}.small{font-size:13px}.tiny{font-size:11px}.dim{font-size:13px;fill:#52606d}
+      .outline{fill:#fff;stroke:#344563;stroke-width:3}.axis{stroke:#7a869a;stroke-width:1.6;stroke-dasharray:7 6}.wall{stroke:#344563;stroke-width:3}.firewall{stroke:#c9372c;stroke-width:4}.dimension{stroke:#52606d;stroke-width:1.3;marker-start:url(#arrow);marker-end:url(#arrow)}
+      .column{fill:#344563}.door{fill:none;stroke:#344563;stroke-width:1.5}.window{stroke:#0c66e4;stroke-width:5}
+    </style>
+  </defs>
+  <rect width="1860" height="1080" fill="#f7f9fc"/>
+  <text x="930" y="42" text-anchor="middle" class="title">16m × 15m 商铺＋民宿完整平面方案 V2</text>
+  <text x="930" y="72" text-anchor="middle" class="sub">二、三层前后各悬挑1.5m；各7间客房，共14间；两端独立疏散楼梯</text>
+
+  <!-- Shared street labels -->
+  <g>
+    <rect x="55" y="132" width="480" height="46" rx="7" fill="#dfe3e8"/><line x1="75" y1="155" x2="515" y2="155" stroke="#fff" stroke-width="3" stroke-dasharray="22 14"/>
+    <rect x="690" y="132" width="480" height="46" rx="7" fill="#dfe3e8"/><line x1="710" y1="155" x2="1150" y2="155" stroke="#fff" stroke-width="3" stroke-dasharray="22 14"/>
+    <rect x="1325" y="132" width="480" height="46" rx="7" fill="#dfe3e8"/><line x1="1345" y1="155" x2="1785" y2="155" stroke="#fff" stroke-width="3" stroke-dasharray="22 14"/>
+    <text x="295" y="153" text-anchor="middle" class="label">临街道路</text><text x="930" y="153" text-anchor="middle" class="label">临街方向 / 客房外窗</text><text x="1565" y="153" text-anchor="middle" class="label">临街方向 / 客房外窗</text>
+  </g>
+
+  <text x="295" y="112" text-anchor="middle" class="head">一层：商铺＋两条独立民宿出口</text>
+  <text x="930" y="112" text-anchor="middle" class="head">二层：7间客房＋前后1.5m悬挑阳台</text>
+  <text x="1565" y="112" text-anchor="middle" class="head">三层：7间客房＋前后1.5m悬挑阳台</text>
+
+  <!-- Upper-floor 1.5m front/rear cantilever balcony zones; original 15m grid remains y210..660 -->
+  <rect x="690" y="165" width="480" height="45" fill="#d8f3ff" fill-opacity="0.88" stroke="#0c66e4" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <rect x="690" y="660" width="480" height="45" fill="#d8f3ff" fill-opacity="0.88" stroke="#0c66e4" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <text x="930" y="198" text-anchor="middle" class="small">前挑1.5m：客房阳台/遮阳空间</text>
+  <text x="930" y="689" text-anchor="middle" class="small">后挑1.5m：客房阳台/晾晒与设备遮蔽区</text>
+  <rect x="1325" y="165" width="480" height="45" fill="#d8f3ff" fill-opacity="0.88" stroke="#0c66e4" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <rect x="1325" y="660" width="480" height="45" fill="#d8f3ff" fill-opacity="0.88" stroke="#0c66e4" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <text x="1565" y="198" text-anchor="middle" class="small">前挑1.5m：客房阳台/遮阳空间</text>
+  <text x="1565" y="689" text-anchor="middle" class="small">后挑1.5m：客房阳台/晾晒与设备遮蔽区</text>
+
+  <!-- ================= GROUND FLOOR x55 y210 scale30 ================= -->
+  <rect x="55" y="210" width="480" height="450" class="outline"/>
+  <g class="axis"><line x1="175" y1="210" x2="175" y2="660"/><line x1="295" y1="210" x2="295" y2="660"/><line x1="415" y1="210" x2="415" y2="660"/><line x1="55" y1="360" x2="535" y2="360"/><line x1="55" y1="510" x2="535" y2="510"/></g>
+  <!-- left and right protected entrance passages -->
+  <rect x="55" y="210" width="42" height="183" fill="#d9eafd" stroke="#0c66e4" stroke-width="2.5"/>
+  <rect x="493" y="210" width="42" height="183" fill="#fce3e1" stroke="#c9372c" stroke-width="2.5"/>
+  <path d="M76 226V377" stroke="#0c66e4" stroke-width="2.5" marker-end="url(#arrow)"/><path d="M514 226V377" stroke="#c9372c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="76" y="305" text-anchor="middle" class="tiny" transform="rotate(-90 76 305)">民宿主入口约1.4m</text><text x="514" y="305" text-anchor="middle" class="tiny" transform="rotate(-90 514 305)">第二疏散出口约1.4m</text>
+  <!-- flexible shops -->
+  <rect x="97" y="210" width="132" height="300" fill="#e6f5e9" stroke="#2d9d58" stroke-width="2"/>
+  <rect x="229" y="210" width="132" height="300" fill="#eef8e9" stroke="#69a84f" stroke-width="2"/>
+  <rect x="361" y="210" width="132" height="300" fill="#f3faef" stroke="#69a84f" stroke-width="2"/>
+  <text x="163" y="292" text-anchor="middle" class="head">商铺 A</text><text x="163" y="319" text-anchor="middle" class="small">临街约4.4m</text>
+  <text x="295" y="292" text-anchor="middle" class="head">商铺 B</text><text x="295" y="319" text-anchor="middle" class="small">临街约4.4m</text>
+  <text x="427" y="292" text-anchor="middle" class="head">商铺 C</text><text x="427" y="319" text-anchor="middle" class="small">临街约4.4m</text>
+  <!-- left stair -->
+  <rect x="97" y="348" width="78" height="90" fill="#cfe7ff" stroke="#0c66e4" stroke-width="3"/><rect x="109" y="361" width="54" height="64" fill="#f5f9ff" stroke="#0c66e4" stroke-width="1.5"/><rect x="127" y="382" width="18" height="22" fill="#e9ecef" stroke="#7a869a" stroke-dasharray="3 2"/><path d="M114 380H136V366H158V395H154V419H136V423H112V397" fill="none" stroke="#0c66e4" stroke-width="2" marker-end="url(#arrow)"/><text x="136" y="452" text-anchor="middle" class="small">主疏散楼梯</text>
+  <!-- left lobby/lift -->
+  <rect x="55" y="393" width="45" height="45" fill="#fff1b8" stroke="#e2a400" stroke-width="2"/><text x="77" y="412" text-anchor="middle" class="tiny">候梯</text><text x="77" y="426" text-anchor="middle" class="tiny">平台</text>
+  <rect x="55" y="438" width="72" height="72" fill="#ffe2bd" stroke="#e56910" stroke-width="3"/><line x1="57" y1="440" x2="125" y2="508" stroke="#e56910"/><line x1="125" y1="440" x2="57" y2="508" stroke="#e56910"/><text x="91" y="469" text-anchor="middle" class="small">电梯</text><text x="91" y="489" text-anchor="middle" class="tiny">2.4×2.4m</text>
+  <!-- right stair and shared landing -->
+  <rect x="415" y="348" width="78" height="90" fill="#fce3e1" stroke="#c9372c" stroke-width="3"/><rect x="427" y="361" width="54" height="64" fill="#fff6f5" stroke="#c9372c" stroke-width="1.5"/><rect x="445" y="382" width="18" height="22" fill="#e9ecef" stroke="#7a869a" stroke-dasharray="3 2"/><path d="M432 380H454V366H476V395H472V419H454V423H430V397" fill="none" stroke="#c9372c" stroke-width="2" marker-end="url(#arrow)"/><text x="454" y="452" text-anchor="middle" class="small">第二疏散楼梯</text>
+  <rect x="490" y="393" width="45" height="45" fill="#ffeceb" stroke="#c9372c" stroke-width="2"/><text x="512" y="412" text-anchor="middle" class="tiny">疏散</text><text x="512" y="426" text-anchor="middle" class="tiny">平台</text>
+  <!-- rear service -->
+  <rect x="55" y="510" width="160" height="150" fill="#f6f0e4" stroke="#a6772e" stroke-width="2"/><rect x="215" y="510" width="160" height="150" fill="#f8f3e9" stroke="#a6772e" stroke-width="2"/><rect x="375" y="510" width="160" height="150" fill="#f8f3e9" stroke="#a6772e" stroke-width="2"/>
+  <text x="135" y="574" text-anchor="middle" class="label">A仓库/后勤</text><text x="295" y="574" text-anchor="middle" class="label">B仓库/后勤</text><text x="455" y="574" text-anchor="middle" class="label">C仓库/后勤</text>
+  <text x="295" y="634" text-anchor="middle" class="small">商铺不得占用或向两侧民宿疏散通道开门</text>
+
+  <!-- ================= HOTEL FLOOR TEMPLATE FUNCTION: 2F ================= -->
+  <rect x="690" y="210" width="480" height="450" class="outline"/>
+  <g class="axis"><line x1="810" y1="210" x2="810" y2="660"/><line x1="930" y1="210" x2="930" y2="660"/><line x1="1050" y1="210" x2="1050" y2="660"/><line x1="690" y1="360" x2="1170" y2="360"/><line x1="690" y1="510" x2="1170" y2="510"/></g>
+  <!-- central corridor 1.5m -->
+  <rect x="690" y="393" width="480" height="45" fill="#fff1b8" stroke="#e2a400" stroke-width="2"/><line x1="715" y1="415" x2="1145" y2="415" stroke="#e2a400" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="930" y="410" text-anchor="middle" class="label">1.5m双向疏散走道</text><text x="930" y="430" text-anchor="middle" class="tiny">左、右两个安全出口，距离大于5m</text>
+  <!-- front rooms -->
+  <rect x="690" y="210" width="120" height="138" fill="#e7f0fb" stroke="#5588c7" stroke-width="2"/><rect x="810" y="210" width="120" height="183" fill="#eaf2fc" stroke="#5588c7" stroke-width="2"/><rect x="930" y="210" width="120" height="183" fill="#eaf2fc" stroke="#5588c7" stroke-width="2"/><rect x="1050" y="210" width="120" height="138" fill="#e9ecef" stroke="#7a869a" stroke-width="2"/>
+  <text x="750" y="268" text-anchor="middle" class="label">201</text><text x="750" y="291" text-anchor="middle" class="small">小单间约18㎡</text>
+  <text x="870" y="278" text-anchor="middle" class="label">202</text><text x="870" y="301" text-anchor="middle" class="small">小单间约24㎡</text>
+  <text x="990" y="278" text-anchor="middle" class="label">203</text><text x="990" y="301" text-anchor="middle" class="small">小单间约24㎡</text>
+  <text x="1110" y="263" text-anchor="middle" class="label">公共休息区</text><text x="1110" y="286" text-anchor="middle" class="small">前台/布草/饮水</text>
+  <!-- front bathrooms -->
+  <rect x="762" y="282" width="48" height="66" fill="#dff1f5" stroke="#248a9c"/><rect x="810" y="333" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="930" y="333" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><text x="786" y="317" text-anchor="middle" class="tiny">独卫</text><text x="834" y="366" text-anchor="middle" class="tiny">独卫</text><text x="954" y="366" text-anchor="middle" class="tiny">独卫</text>
+  <!-- front windows -->
+  <line x1="715" y1="210" x2="775" y2="210" class="window"/><line x1="835" y1="210" x2="895" y2="210" class="window"/><line x1="955" y1="210" x2="1015" y2="210" class="window"/><line x1="1080" y1="210" x2="1140" y2="210" class="window"/>
+  <!-- left stair/lobby/elevator -->
+  <rect x="732" y="348" width="78" height="90" fill="#cfe7ff" stroke="#0c66e4" stroke-width="3"/><text x="771" y="374" text-anchor="middle" class="tiny">四跑主楼梯</text><rect x="690" y="393" width="45" height="45" fill="#fff1b8" stroke="#e2a400" stroke-width="2"/>
+  <rect x="690" y="438" width="72" height="72" fill="#ffe2bd" stroke="#e56910" stroke-width="3"/><line x1="692" y1="440" x2="760" y2="508" stroke="#e56910"/><line x1="760" y1="440" x2="692" y2="508" stroke="#e56910"/><text x="726" y="471" text-anchor="middle" class="small">电梯</text>
+  <!-- right stair -->
+  <rect x="1050" y="348" width="78" height="90" fill="#fce3e1" stroke="#c9372c" stroke-width="3"/><text x="1089" y="374" text-anchor="middle" class="tiny">第二疏散楼梯</text><rect x="1125" y="393" width="45" height="45" fill="#ffeceb" stroke="#c9372c" stroke-width="2"/>
+  <!-- rear rooms -->
+  <rect x="690" y="510" width="120" height="150" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="810" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="930" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="1050" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/>
+  <text x="750" y="570" text-anchor="middle" class="label">204</text><text x="750" y="593" text-anchor="middle" class="small">单间约20㎡</text>
+  <text x="870" y="540" text-anchor="middle" class="label">205</text><text x="870" y="563" text-anchor="middle" class="small">含玄关独卫</text>
+  <text x="990" y="540" text-anchor="middle" class="label">206</text><text x="990" y="563" text-anchor="middle" class="small">含玄关独卫</text>
+  <text x="1110" y="540" text-anchor="middle" class="label">207</text><text x="1110" y="563" text-anchor="middle" class="small">含玄关独卫</text>
+  <rect x="762" y="510" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="810" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="930" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="1050" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/>
+  <text x="786" y="544" text-anchor="middle" class="tiny">独卫</text><text x="834" y="472" text-anchor="middle" class="tiny">独卫</text><text x="954" y="472" text-anchor="middle" class="tiny">独卫</text><text x="1074" y="472" text-anchor="middle" class="tiny">独卫</text>
+  <line x1="715" y1="660" x2="775" y2="660" class="window"/><line x1="835" y1="660" x2="895" y2="660" class="window"/><line x1="955" y1="660" x2="1015" y2="660" class="window"/><line x1="1075" y1="660" x2="1135" y2="660" class="window"/>
+
+  <!-- ================= 3F DUPLICATE ================= -->
+  <rect x="1325" y="210" width="480" height="450" class="outline"/>
+  <g class="axis"><line x1="1445" y1="210" x2="1445" y2="660"/><line x1="1565" y1="210" x2="1565" y2="660"/><line x1="1685" y1="210" x2="1685" y2="660"/><line x1="1325" y1="360" x2="1805" y2="360"/><line x1="1325" y1="510" x2="1805" y2="510"/></g>
+  <rect x="1325" y="393" width="480" height="45" fill="#fff1b8" stroke="#e2a400" stroke-width="2"/><line x1="1350" y1="415" x2="1780" y2="415" stroke="#e2a400" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="1565" y="410" text-anchor="middle" class="label">1.5m双向疏散走道</text><text x="1565" y="430" text-anchor="middle" class="tiny">两端安全出口</text>
+  <rect x="1325" y="210" width="120" height="138" fill="#e7f0fb" stroke="#5588c7" stroke-width="2"/><rect x="1445" y="210" width="120" height="183" fill="#eaf2fc" stroke="#5588c7" stroke-width="2"/><rect x="1565" y="210" width="120" height="183" fill="#eaf2fc" stroke="#5588c7" stroke-width="2"/><rect x="1685" y="210" width="120" height="138" fill="#e9ecef" stroke="#7a869a" stroke-width="2"/>
+  <text x="1385" y="268" text-anchor="middle" class="label">301</text><text x="1385" y="291" text-anchor="middle" class="small">小单间约18㎡</text><text x="1505" y="278" text-anchor="middle" class="label">302</text><text x="1505" y="301" text-anchor="middle" class="small">小单间约24㎡</text><text x="1625" y="278" text-anchor="middle" class="label">303</text><text x="1625" y="301" text-anchor="middle" class="small">小单间约24㎡</text><text x="1745" y="263" text-anchor="middle" class="label">布草/清洁间</text><text x="1745" y="286" text-anchor="middle" class="small">可设洗衣储物</text>
+  <rect x="1397" y="282" width="48" height="66" fill="#dff1f5" stroke="#248a9c"/><rect x="1445" y="333" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="1565" y="333" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><text x="1421" y="317" text-anchor="middle" class="tiny">独卫</text><text x="1469" y="366" text-anchor="middle" class="tiny">独卫</text><text x="1589" y="366" text-anchor="middle" class="tiny">独卫</text>
+  <line x1="1350" y1="210" x2="1410" y2="210" class="window"/><line x1="1470" y1="210" x2="1530" y2="210" class="window"/><line x1="1590" y1="210" x2="1650" y2="210" class="window"/><line x1="1715" y1="210" x2="1775" y2="210" class="window"/>
+  <rect x="1367" y="348" width="78" height="90" fill="#cfe7ff" stroke="#0c66e4" stroke-width="3"/><text x="1406" y="374" text-anchor="middle" class="tiny">四跑主楼梯</text><rect x="1325" y="393" width="45" height="45" fill="#fff1b8" stroke="#e2a400" stroke-width="2"/><rect x="1325" y="438" width="72" height="72" fill="#ffe2bd" stroke="#e56910" stroke-width="3"/><line x1="1327" y1="440" x2="1395" y2="508" stroke="#e56910"/><line x1="1395" y1="440" x2="1327" y2="508" stroke="#e56910"/><text x="1361" y="471" text-anchor="middle" class="small">电梯</text>
+  <rect x="1685" y="348" width="78" height="90" fill="#fce3e1" stroke="#c9372c" stroke-width="3"/><text x="1724" y="374" text-anchor="middle" class="tiny">第二疏散楼梯</text><rect x="1760" y="393" width="45" height="45" fill="#ffeceb" stroke="#c9372c" stroke-width="2"/>
+  <rect x="1325" y="510" width="120" height="150" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="1445" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="1565" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/><rect x="1685" y="438" width="120" height="222" fill="#f2f0fa" stroke="#7665a8" stroke-width="2"/>
+  <text x="1385" y="570" text-anchor="middle" class="label">304</text><text x="1385" y="593" text-anchor="middle" class="small">单间约20㎡</text><text x="1505" y="540" text-anchor="middle" class="label">305</text><text x="1505" y="563" text-anchor="middle" class="small">含玄关独卫</text><text x="1625" y="540" text-anchor="middle" class="label">306</text><text x="1625" y="563" text-anchor="middle" class="small">含玄关独卫</text><text x="1745" y="540" text-anchor="middle" class="label">307</text><text x="1745" y="563" text-anchor="middle" class="small">含玄关独卫</text>
+  <rect x="1397" y="510" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="1445" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="1565" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><rect x="1685" y="438" width="48" height="60" fill="#dff1f5" stroke="#248a9c"/><text x="1421" y="544" text-anchor="middle" class="tiny">独卫</text><text x="1469" y="472" text-anchor="middle" class="tiny">独卫</text><text x="1589" y="472" text-anchor="middle" class="tiny">独卫</text><text x="1709" y="472" text-anchor="middle" class="tiny">独卫</text>
+  <line x1="1350" y1="660" x2="1410" y2="660" class="window"/><line x1="1470" y1="660" x2="1530" y2="660" class="window"/><line x1="1590" y1="660" x2="1650" y2="660" class="window"/><line x1="1710" y1="660" x2="1770" y2="660" class="window"/>
+
+  <!-- columns for all panels -->
+  <g class="column">
+    <!-- generated visually at grid points -->
+    <g><rect x="49" y="204" width="12" height="12"/><rect x="169" y="204" width="12" height="12"/><rect x="289" y="204" width="12" height="12"/><rect x="409" y="204" width="12" height="12"/><rect x="529" y="204" width="12" height="12"/><rect x="49" y="354" width="12" height="12"/><rect x="169" y="354" width="12" height="12"/><rect x="289" y="354" width="12" height="12"/><rect x="409" y="354" width="12" height="12"/><rect x="529" y="354" width="12" height="12"/><rect x="49" y="504" width="12" height="12"/><rect x="169" y="504" width="12" height="12"/><rect x="289" y="504" width="12" height="12"/><rect x="409" y="504" width="12" height="12"/><rect x="529" y="504" width="12" height="12"/><rect x="49" y="654" width="12" height="12"/><rect x="169" y="654" width="12" height="12"/><rect x="289" y="654" width="12" height="12"/><rect x="409" y="654" width="12" height="12"/><rect x="529" y="654" width="12" height="12"/></g>
+    <g><rect x="684" y="204" width="12" height="12"/><rect x="804" y="204" width="12" height="12"/><rect x="924" y="204" width="12" height="12"/><rect x="1044" y="204" width="12" height="12"/><rect x="1164" y="204" width="12" height="12"/><rect x="684" y="354" width="12" height="12"/><rect x="804" y="354" width="12" height="12"/><rect x="924" y="354" width="12" height="12"/><rect x="1044" y="354" width="12" height="12"/><rect x="1164" y="354" width="12" height="12"/><rect x="684" y="504" width="12" height="12"/><rect x="804" y="504" width="12" height="12"/><rect x="924" y="504" width="12" height="12"/><rect x="1044" y="504" width="12" height="12"/><rect x="1164" y="504" width="12" height="12"/><rect x="684" y="654" width="12" height="12"/><rect x="804" y="654" width="12" height="12"/><rect x="924" y="654" width="12" height="12"/><rect x="1044" y="654" width="12" height="12"/><rect x="1164" y="654" width="12" height="12"/></g>
+    <g><rect x="1319" y="204" width="12" height="12"/><rect x="1439" y="204" width="12" height="12"/><rect x="1559" y="204" width="12" height="12"/><rect x="1679" y="204" width="12" height="12"/><rect x="1799" y="204" width="12" height="12"/><rect x="1319" y="354" width="12" height="12"/><rect x="1439" y="354" width="12" height="12"/><rect x="1559" y="354" width="12" height="12"/><rect x="1679" y="354" width="12" height="12"/><rect x="1799" y="354" width="12" height="12"/><rect x="1319" y="504" width="12" height="12"/><rect x="1439" y="504" width="12" height="12"/><rect x="1559" y="504" width="12" height="12"/><rect x="1679" y="504" width="12" height="12"/><rect x="1799" y="504" width="12" height="12"/><rect x="1319" y="654" width="12" height="12"/><rect x="1439" y="654" width="12" height="12"/><rect x="1559" y="654" width="12" height="12"/><rect x="1679" y="654" width="12" height="12"/><rect x="1799" y="654" width="12" height="12"/></g>
+  </g>
+
+  <!-- dimensions -->
+  <g><line x1="55" y1="195" x2="535" y2="195" class="dimension"/><text x="295" y="190" text-anchor="middle" class="dim">16m（4m×4跨）</text><line x1="690" y1="195" x2="1170" y2="195" class="dimension"/><text x="930" y="190" text-anchor="middle" class="dim">16m（4m×4跨）</text><line x1="1325" y1="195" x2="1805" y2="195" class="dimension"/><text x="1565" y="190" text-anchor="middle" class="dim">16m（4m×4跨）</text></g>
+
+  <!-- Notes and legend -->
+  <rect x="55" y="710" width="1750" height="315" rx="12" fill="#fff" stroke="#b3bac5" stroke-width="2"/>
+  <text x="85" y="750" class="head">本版的落地逻辑</text>
+  <text x="85" y="785" class="small">1. 二、三层各7间，共14间；每间均设置独卫，并将睡眠区靠临街或后侧外墙布置，图中蓝线为对外窗。</text>
+  <text x="85" y="815" class="small">2. 中部设置约1.5m宽公共走道，左端进入主楼梯/电梯，右端进入第二疏散楼梯；两楼梯相距远大于5m。</text>
+  <text x="85" y="845" class="small">3. 一层两条疏散路线均独立直通临街，必须与商铺采用防火分隔，商铺不得堆货、开门或占用疏散通道。</text>
+  <text x="85" y="875" class="small">4. 第二疏散楼梯与主楼梯同样按四跑计算；一层4.0m暂用24级，上层3.3m暂用20级。电梯不能作为安全出口。</text>
+  <text x="85" y="905" class="small">5. 客房超过8间时，官方民宿导则提出简易自动喷水灭火系统要求；同时需配置报警、灭火器、应急照明和疏散指示。</text>
+  <text x="85" y="935" class="small">6. 二、三层前后各挑1.5m，单层外挑投影约48㎡；本版按开放阳台使用，卫生间、楼梯、电梯和重型设备均留在原柱网内。</text>
+  <text x="85" y="965" class="small">7. 外挑边缘不得越过用地红线、道路红线和允许的建筑控制线；是否计入建筑面积及允许封闭，以当地规划审批为准。</text>
+  <text x="85" y="997" class="label">结构重点：除两处楼梯洞口边梁外，还要复核3.0m悬挑总增量带来的梁板、柱和基础弯矩；施工图确认前不得浇筑相关梁板。</text>
+  <text x="1780" y="1008" text-anchor="end" class="tiny" fill="#6b778c">完整方案示意，不可直接用于现场放线或钢筋施工</text>
+</svg>

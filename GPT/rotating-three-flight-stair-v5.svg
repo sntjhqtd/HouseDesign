@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1780" height="1120" viewBox="0 0 1780 1120">
+  <title>旋转三跑楼梯修正版V5</title>
+  <desc>三段直梯围绕中央梯井连续转向，每次转向90度；说明4米与3.3米层高的踏步分配及放入4米乘5米柱网的影响。</desc>
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#102a4c}
+      .title{font-size:31px;font-weight:800}.sub{font-size:17px;fill:#526780}.head{font-size:23px;font-weight:800}
+      .label{font-size:17px;font-weight:700}.small{font-size:14px}.tiny{font-size:12px}.note{font-size:16px}
+      .outer{fill:#f8fbff;stroke:#173b68;stroke-width:4}.flight{fill:#dcecff;stroke:#0878e5;stroke-width:2}
+      .landing{fill:#fff0b8;stroke:#d79b00;stroke-width:2}.void{fill:#f0f2f5;stroke:#7b8da5;stroke-width:2;stroke-dasharray:6 5}
+      .wall{fill:none;stroke:#173b68;stroke-width:3}.grid{fill:none;stroke:#95a8bf;stroke-width:1.5;stroke-dasharray:7 6}
+      .dim{stroke:#64758b;stroke-width:1.4;marker-start:url(#dim);marker-end:url(#dim)}
+      .route{fill:none;stroke:#0878e5;stroke-width:4;marker-end:url(#arrow)}
+      .warn{fill:#c63027;font-size:16px;font-weight:700}.ok{fill:#087044;font-size:16px;font-weight:700}
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#0878e5"/></marker>
+    <marker id="dim" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 0L0 3.5L7 7Z" fill="#64758b"/></marker>
+  </defs>
+  <rect width="1780" height="1120" fill="#f7f9fc"/>
+  <text x="890" y="45" text-anchor="middle" class="title">修正：回转式三跑楼梯（不是三条平行梯段）</text>
+  <text x="890" y="76" text-anchor="middle" class="sub">三段直梯绕中央梯井连续转向：第一跑↑ → 第二跑→ → 第三跑↓；每次在休息平台转90°</text>
+
+  <!-- 1F to 2F -->
+  <g id="low">
+    <text x="300" y="120" text-anchor="middle" class="head">一层 → 二层｜层高暂按4.00m</text>
+    <text x="290" y="148" text-anchor="middle" class="small">27级＝11＋5＋11；单级148.1mm</text>
+    <rect x="90" y="185" width="390" height="530" rx="3" class="outer"/>
+    <!-- clear stair geometry -->
+    <rect x="105" y="195" width="120" height="120" class="landing"/>
+    <rect x="225" y="200" width="104" height="110" class="flight"/>
+    <rect x="329" y="195" width="120" height="120" class="landing"/>
+    <rect x="110" y="315" width="110" height="260" class="flight"/>
+    <rect x="334" y="315" width="110" height="260" class="flight"/>
+    <rect x="105" y="575" width="120" height="120" class="landing"/>
+    <rect x="329" y="575" width="120" height="120" class="landing"/>
+    <rect x="225" y="315" width="104" height="260" class="void"/>
+    <text x="277" y="435" text-anchor="middle" class="label">中央梯井</text><text x="277" y="458" text-anchor="middle" class="tiny">栏杆/防坠措施</text>
+    <!-- treads -->
+    <g stroke="#79b1ef" stroke-width="1.4">
+      <path d="M110 341H220M110 367H220M110 393H220M110 419H220M110 445H220M110 471H220M110 497H220M110 523H220M110 549H220"/>
+      <path d="M334 341H444M334 367H444M334 393H444M334 419H444M334 445H444M334 471H444M334 497H444M334 523H444M334 549H444"/>
+      <path d="M251 200V310M277 200V310M303 200V310"/>
+    </g>
+    <!-- route -->
+    <path d="M165 665V325" class="route"/><path d="M230 255H318" class="route"/><path d="M389 325V665" class="route"/>
+    <text x="165" y="688" text-anchor="middle" class="label">本层入口</text><text x="389" y="688" text-anchor="middle" class="label">上层出口</text>
+    <text x="165" y="445" text-anchor="middle" class="tiny" transform="rotate(-90 165 445)">第1跑：11级/10踏面</text>
+    <text x="277" y="292" text-anchor="middle" class="tiny">第2跑：5级/4踏面</text>
+    <text x="389" y="445" text-anchor="middle" class="tiny" transform="rotate(90 389 445)">第3跑：11级/10踏面</text>
+    <line x1="90" y1="745" x2="480" y2="745" class="dim"/><text x="285" y="767" text-anchor="middle" class="small">结构占位约3.9～4.0m</text>
+    <line x1="505" y1="185" x2="505" y2="715" class="dim"/><text x="529" y="450" text-anchor="middle" class="small" transform="rotate(90 529 450)">约5.3m</text>
+  </g>
+
+  <!-- 2F to 3F -->
+  <g id="upper">
+    <text x="845" y="120" text-anchor="middle" class="head">二层 → 三层｜层高暂按3.30m</text>
+    <text x="825" y="148" text-anchor="middle" class="small">21级＝8＋5＋8；单级157.1mm；沿用同一梯井外框</text>
+    <rect x="630" y="185" width="390" height="530" rx="3" class="outer"/>
+    <rect x="645" y="260" width="120" height="120" class="landing"/>
+    <rect x="765" y="265" width="104" height="110" class="flight"/>
+    <rect x="869" y="260" width="120" height="120" class="landing"/>
+    <rect x="650" y="380" width="110" height="182" class="flight"/>
+    <rect x="874" y="380" width="110" height="182" class="flight"/>
+    <rect x="645" y="562" width="120" height="120" class="landing"/>
+    <rect x="869" y="562" width="120" height="120" class="landing"/>
+    <rect x="765" y="380" width="104" height="182" class="void"/>
+    <text x="817" y="465" text-anchor="middle" class="label">中央梯井</text>
+    <g stroke="#79b1ef" stroke-width="1.4"><path d="M650 406H760M650 432H760M650 458H760M650 484H760M650 510H760M650 536H760M874 406H984M874 432H984M874 458H984M874 484H984M874 510H984M874 536H984M791 265V375M817 265V375M843 265V375"/></g>
+    <path d="M705 652V390" class="route"/><path d="M770 320H858" class="route"/><path d="M929 390V652" class="route"/>
+    <text x="705" y="674" text-anchor="middle" class="label">二层入口</text><text x="929" y="674" text-anchor="middle" class="label">三层出口</text>
+    <text x="705" y="475" text-anchor="middle" class="tiny" transform="rotate(-90 705 475)">第1跑8级</text><text x="817" y="357" text-anchor="middle" class="tiny">第2跑5级</text><text x="929" y="475" text-anchor="middle" class="tiny" transform="rotate(90 929 475)">第3跑8级</text>
+    <text x="825" y="752" text-anchor="middle" class="ok">上下层入口均在同一侧，不会像平行三跑那样前后交替</text>
+  </g>
+
+  <!-- fit in grid -->
+  <g id="fit">
+    <text x="1400" y="120" text-anchor="middle" class="head">放进现有4m×5m柱网的结果</text>
+    <text x="1400" y="148" text-anchor="middle" class="small">4m为轴线尺寸时，必须扣除柱、墙和抹灰，不能当作4m净宽</text>
+    <rect x="1175" y="185" width="400" height="500" fill="#f6f4ff" stroke="#6654a3" stroke-width="3"/>
+    <line x1="1175" y1="185" x2="1175" y2="685" class="wall"/><line x1="1575" y1="185" x2="1575" y2="685" class="wall"/>
+    <rect x="1180" y="185" width="390" height="530" fill="#e7f2ff" fill-opacity="0.72" stroke="#0878e5" stroke-width="3"/>
+    <text x="1375" y="405" text-anchor="middle" class="head">回转三跑楼梯</text><text x="1375" y="438" text-anchor="middle" class="label">约3.9×5.3m</text>
+    <rect x="1180" y="685" width="390" height="30" fill="#ffd8d3" stroke="#cf3b31"/>
+    <text x="1375" y="707" text-anchor="middle" class="tiny">纵向跨轴线约0.3m</text>
+    <line x1="1175" y1="705" x2="1575" y2="705" class="dim"/><text x="1375" y="728" text-anchor="middle" class="small">原柱网轴线4.0m</text>
+    <line x1="1180" y1="755" x2="1570" y2="755" class="dim"/><text x="1375" y="778" text-anchor="middle" class="warn">横向约3.9～4.0m；纵向约5.3m</text>
+    <rect x="1225" y="805" width="350" height="82" rx="8" fill="#fff0b8" stroke="#d79b00"/><text x="1400" y="838" text-anchor="middle" class="label">原2.6m电梯前室</text><text x="1400" y="866" text-anchor="middle" class="warn">只能作候梯厅，放不下这种旋转三跑楼梯</text>
+  </g>
+
+  <!-- notes -->
+  <rect x="70" y="805" width="1040" height="245" rx="12" fill="white" stroke="#b5c1d1" stroke-width="2"/>
+  <text x="95" y="844" class="head">我对你所说“三跑”的正确理解</text>
+  <text x="95" y="880" class="note">1. 三跑都是直梯段，不采用扇形踏步；第1跑到平台转90°，第2跑后再转90°，第3跑到达上层。</text>
+  <text x="95" y="915" class="note">2. 一层4.0m为了压缩横向尺寸，采用11＋5＋11级；中间一跑较短，但三跑踏步高度保持一致。</text>
+  <text x="95" y="950" class="note">3. 公共楼梯暂按两股人流净宽1.10m；转向平台不小于1.20m，实体墙转角处还需按1.30m复核。</text>
+  <text x="95" y="985" class="note">4. 这一版横向可控制在4m内，但纵向需约5.3m；不得为硬塞进4×5m而缩小净宽或改用扇形踏步。</text>
+  <text x="95" y="1025" class="warn">本图是几何试排，不是结构施工图；现有基础、柱位、梁高和楼梯净高必须现场测量后才能定洞口。</text>
+  <text x="1700" y="1082" text-anchor="end" class="small">V5｜旋转三跑修正版｜2026-07</text>
+</svg>

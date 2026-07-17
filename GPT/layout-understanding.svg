@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52606d"/>
+    </marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 28px; font-weight: 700; }
+      .label { font-size: 21px; font-weight: 600; }
+      .small { font-size: 17px; }
+      .dim { font-size: 17px; fill: #52606d; }
+      .grid { stroke: #344563; stroke-width: 3; fill: none; }
+      .inner { stroke: #7a869a; stroke-width: 2; stroke-dasharray: 8 7; }
+      .dimension { stroke: #52606d; stroke-width: 1.5; marker-start: url(#arrow); marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1100" height="900" fill="#f7f9fc"/>
+  <text x="550" y="48" text-anchor="middle" class="title">16m × 15m 柱网与交通核示意</text>
+
+  <!-- Street -->
+  <rect x="170" y="82" width="720" height="66" rx="8" fill="#dfe3e8"/>
+  <line x1="195" y1="115" x2="865" y2="115" stroke="#ffffff" stroke-width="4" stroke-dasharray="28 18"/>
+  <text x="530" y="107" text-anchor="middle" class="label">临街道路</text>
+  <text x="530" y="135" text-anchor="middle" class="small">临街面 / 建筑正面</text>
+
+  <!-- Main plan: 16m x 15m at 45 px/m -->
+  <!-- x=170..890 (720), y=175..850 (675) -->
+  <rect x="170" y="175" width="720" height="675" fill="#ffffff" class="grid"/>
+
+  <!-- Grid: 4m bays -->
+  <line x1="350" y1="175" x2="350" y2="850" class="inner"/>
+  <line x1="530" y1="175" x2="530" y2="850" class="inner"/>
+  <line x1="710" y1="175" x2="710" y2="850" class="inner"/>
+
+  <!-- Grid: 5m sections -->
+  <line x1="170" y1="400" x2="890" y2="400" class="inner"/>
+  <line x1="170" y1="625" x2="890" y2="625" class="inner"/>
+
+  <!-- Front-left stair/passage bay -->
+  <rect x="170" y="175" width="180" height="225" fill="#d9eafd" stroke="#0c66e4" stroke-width="4"/>
+  <text x="260" y="265" text-anchor="middle" class="label">楼梯＋住宅通道</text>
+  <text x="260" y="296" text-anchor="middle" class="small">左侧临街第一格</text>
+  <text x="260" y="324" text-anchor="middle" class="small">4.0m × 5.0m</text>
+
+  <!-- Elevator in rear-left of middle-left bay -->
+  <!-- 2.4m = 108px; left edge x=170, rear edge of middle bay y=625 -->
+  <rect x="170" y="517" width="108" height="108" fill="#ffe2bd" stroke="#e56910" stroke-width="4"/>
+  <line x1="172" y1="519" x2="276" y2="623" stroke="#e56910" stroke-width="2"/>
+  <line x1="276" y1="519" x2="172" y2="623" stroke="#e56910" stroke-width="2"/>
+  <text x="224" y="561" text-anchor="middle" class="label">电梯井</text>
+  <text x="224" y="590" text-anchor="middle" class="small">2.4 × 2.4m</text>
+
+  <!-- Middle-left cell callout -->
+  <text x="284" y="438" class="small">左侧中间一节</text>
+  <path d="M 300 448 L 266 505" fill="none" stroke="#e56910" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- General area labels -->
+  <text x="620" y="285" text-anchor="middle" class="label" fill="#44546f">临街商铺区域（其余3个开间）</text>
+  <text x="620" y="515" text-anchor="middle" class="label" fill="#44546f">中间进深区域</text>
+  <text x="620" y="740" text-anchor="middle" class="label" fill="#44546f">后部进深区域</text>
+
+  <!-- Width dimensions -->
+  <line x1="170" y1="162" x2="890" y2="162" class="dimension"/>
+  <text x="530" y="157" text-anchor="middle" class="dim">总开间 16m</text>
+  <text x="260" y="198" text-anchor="middle" class="dim">4m</text>
+  <text x="440" y="198" text-anchor="middle" class="dim">4m</text>
+  <text x="620" y="198" text-anchor="middle" class="dim">4m</text>
+  <text x="800" y="198" text-anchor="middle" class="dim">4m</text>
+
+  <!-- Depth dimensions -->
+  <line x1="925" y1="175" x2="925" y2="850" class="dimension"/>
+  <text x="950" y="520" class="dim" transform="rotate(90 950 520)">总进深 15m</text>
+  <text x="902" y="290" class="dim">5m</text>
+  <text x="902" y="515" class="dim">5m</text>
+  <text x="902" y="740" class="dim">5m</text>
+
+  <!-- Orientation labels -->
+  <text x="115" y="285" text-anchor="middle" class="small">前段</text>
+  <text x="115" y="515" text-anchor="middle" class="small">中段</text>
+  <text x="115" y="740" text-anchor="middle" class="small">后段</text>
+
+  <text x="1040" y="830" text-anchor="end" class="small" fill="#6b778c">仅用于核对位置理解，不作为施工图</text>
+</svg>

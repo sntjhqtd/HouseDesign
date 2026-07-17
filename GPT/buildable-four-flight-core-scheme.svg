@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="950" viewBox="0 0 1320 950">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#52606d"/>
+    </marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#172b4d}
+      .title{font-size:28px;font-weight:700}.sub{font-size:17px;fill:#5e6c84}
+      .head{font-size:22px;font-weight:700}.label{font-size:18px;font-weight:650}.small{font-size:14px}.dim{font-size:14px;fill:#52606d}
+      .outline{fill:#fff;stroke:#344563;stroke-width:3}.axis{stroke:#7a869a;stroke-width:2;stroke-dasharray:8 7}
+      .wall{stroke:#344563;stroke-width:4}.dimension{stroke:#52606d;stroke-width:1.5;marker-start:url(#arrow);marker-end:url(#arrow)}
+      .column{fill:#344563}.warn{fill:#c9372c}.ok{fill:#2d9d58}
+    </style>
+  </defs>
+
+  <rect width="1320" height="950" fill="#f7f9fc"/>
+  <text x="660" y="42" text-anchor="middle" class="title">落地型初步方案：后置四跑楼梯＋原位电梯</text>
+  <text x="660" y="70" text-anchor="middle" class="sub">按一层4.0m、上层3.3m暂算；保留4m×5m柱网和2.4m×2.4m电梯井</text>
+
+  <!-- Plan title and street -->
+  <text x="380" y="112" text-anchor="middle" class="head">一层左侧两个开间放大平面</text>
+  <rect x="100" y="130" width="560" height="54" rx="8" fill="#dfe3e8"/>
+  <line x1="125" y1="157" x2="635" y2="157" stroke="#fff" stroke-width="4" stroke-dasharray="26 16"/>
+  <text x="380" y="151" text-anchor="middle" class="label">临街道路</text>
+  <text x="380" y="175" text-anchor="middle" class="small">图示范围：8m宽×10m深；其余右侧开间继续作为商铺</text>
+
+  <!-- 8m x 10m at 70px/m: x100..660 y210..910 -->
+  <rect x="100" y="210" width="560" height="700" class="outline"/>
+  <line x1="380" y1="210" x2="380" y2="910" class="axis"/>
+  <line x1="100" y1="560" x2="660" y2="560" class="axis"/>
+
+  <!-- Commercial front area, street to 4.6m -->
+  <rect x="198" y="210" width="462" height="322" fill="#eaf7ed" stroke="#69a84f" stroke-width="2"/>
+  <text x="430" y="330" text-anchor="middle" class="head">临街商铺</text>
+  <text x="430" y="360" text-anchor="middle" class="label">交通入口仅占约1.4m</text>
+  <text x="430" y="389" text-anchor="middle" class="small">相较原4m交通开间，临街可释放约2.6m给商铺</text>
+
+  <!-- Residential entrance corridor: 1.4m wide to lobby -->
+  <rect x="100" y="210" width="98" height="427" fill="#d9eafd" stroke="#0c66e4" stroke-width="3"/>
+  <path d="M149 235V605" stroke="#0c66e4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="149" y="410" text-anchor="middle" class="label" transform="rotate(-90 149 410)">住宅独立入口通道 净宽约1.4m</text>
+
+  <!-- Stair envelope: x 1.4..4.0m, y4.6..7.6m -->
+  <rect x="198" y="532" width="182" height="210" fill="#cfe7ff" stroke="#0c66e4" stroke-width="4"/>
+  <text x="289" y="556" text-anchor="middle" class="small">四跑楼梯控制范围约2.6×3.0m</text>
+
+  <!-- Symbolic four-flight stair around well -->
+  <rect x="218" y="574" width="142" height="146" fill="#f4f9ff" stroke="#0c66e4" stroke-width="2"/>
+  <rect x="265" y="618" width="48" height="56" fill="#e9ecef" stroke="#7a869a" stroke-width="2" stroke-dasharray="5 4"/>
+  <!-- treads on four sides -->
+  <g stroke="#0c66e4" stroke-width="1.5">
+    <line x1="225" y1="590" x2="265" y2="590"/><line x1="225" y1="598" x2="265" y2="598"/><line x1="225" y1="606" x2="265" y2="606"/><line x1="225" y1="614" x2="265" y2="614"/><line x1="225" y1="622" x2="265" y2="622"/>
+    <line x1="313" y1="682" x2="353" y2="682"/><line x1="313" y1="690" x2="353" y2="690"/><line x1="313" y1="698" x2="353" y2="698"/><line x1="313" y1="706" x2="353" y2="706"/><line x1="313" y1="714" x2="353" y2="714"/>
+    <line x1="233" y1="674" x2="233" y2="714"/><line x1="241" y1="674" x2="241" y2="714"/><line x1="249" y1="674" x2="249" y2="714"/><line x1="257" y1="674" x2="257" y2="714"/>
+    <line x1="321" y1="582" x2="321" y2="618"/><line x1="329" y1="582" x2="329" y2="618"/><line x1="337" y1="582" x2="337" y2="618"/><line x1="345" y1="582" x2="345" y2="618"/>
+  </g>
+  <path d="M238 610H282V590H338V645H335V698H289V704H238V650" fill="none" stroke="#0c66e4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="289" y="647" text-anchor="middle" class="small">梯井</text>
+
+  <!-- Shared elevator landing / widened lobby -->
+  <rect x="100" y="637" width="105" height="105" fill="#fff1b8" stroke="#e2a400" stroke-width="3"/>
+  <circle cx="152.5" cy="689.5" r="49" fill="none" stroke="#e2a400" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="152" y="680" text-anchor="middle" class="small">候梯＋楼层平台</text>
+  <text x="152" y="702" text-anchor="middle" class="small">约1.5×1.5m</text>
+  <path d="M198 690H207" stroke="#0c66e4" stroke-width="6"/>
+
+  <!-- Existing elevator shaft -->
+  <rect x="100" y="742" width="168" height="168" fill="#ffe2bd" stroke="#e56910" stroke-width="4"/>
+  <line x1="102" y1="744" x2="266" y2="908" stroke="#e56910" stroke-width="2"/>
+  <line x1="266" y1="744" x2="102" y2="908" stroke="#e56910" stroke-width="2"/>
+  <text x="184" y="815" text-anchor="middle" class="label">原电梯井</text>
+  <text x="184" y="844" text-anchor="middle" class="small">2.4×2.4m</text>
+  <line x1="126" y1="742" x2="204" y2="742" stroke="#fff" stroke-width="10"/>
+  <line x1="126" y1="742" x2="204" y2="742" stroke="#e56910" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- Space beside elevator and commercial rear -->
+  <rect x="268" y="742" width="112" height="168" fill="#d8f3dc" stroke="#2d9d58" stroke-width="2"/>
+  <text x="324" y="817" text-anchor="middle" class="small">柜体/管井</text>
+  <text x="324" y="840" text-anchor="middle" class="small">隔声或储物</text>
+  <rect x="380" y="560" width="280" height="350" fill="#f1f8ee" stroke="#69a84f" stroke-width="2"/>
+  <text x="520" y="727" text-anchor="middle" class="label">商铺后区</text>
+  <text x="520" y="753" text-anchor="middle" class="small">或上层住宅空间</text>
+
+  <!-- Original beam warning -->
+  <line x1="100" y1="560" x2="660" y2="560" stroke="#c9372c" stroke-width="3" stroke-dasharray="10 7"/>
+  <path d="M410 548L720 505" fill="none" stroke="#c9372c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Columns -->
+  <g>
+    <rect x="92" y="202" width="16" height="16" class="column"/><rect x="372" y="202" width="16" height="16" class="column"/><rect x="652" y="202" width="16" height="16" class="column"/>
+    <rect x="92" y="552" width="16" height="16" class="column"/><rect x="372" y="552" width="16" height="16" class="column"/><rect x="652" y="552" width="16" height="16" class="column"/>
+    <rect x="92" y="902" width="16" height="16" class="column"/><rect x="372" y="902" width="16" height="16" class="column"/><rect x="652" y="902" width="16" height="16" class="column"/>
+  </g>
+
+  <!-- Right info panels -->
+  <rect x="750" y="110" width="520" height="230" rx="12" fill="#fff" stroke="#b3bac5" stroke-width="2"/>
+  <text x="780" y="150" class="head">楼梯计算（暂定层高）</text>
+  <text x="780" y="190" class="label">一层 → 二层：层高4.00m</text>
+  <text x="800" y="220" class="small">24级 ÷ 4跑＝每跑6级；每级高约166.7mm</text>
+  <text x="800" y="247" class="small">每跑5个踏面×260mm＝水平投影约1.30m</text>
+  <text x="780" y="285" class="label">二层以上：层高暂按3.30m</text>
+  <text x="800" y="315" class="small">20级 ÷ 4跑＝每跑5级；每级高约165mm</text>
+
+  <rect x="750" y="370" width="520" height="215" rx="12" fill="#fff" stroke="#b3bac5" stroke-width="2"/>
+  <text x="780" y="410" class="head">这个方案换来的空间</text>
+  <text x="800" y="450" class="small">• 临街住宅入口由4.0m缩到约1.4m</text>
+  <text x="800" y="480" class="small">• 可向商铺释放约2.6m临街面宽</text>
+  <text x="800" y="510" class="small">• 楼梯每层回到电梯门前同一侧，动线直接</text>
+  <text x="800" y="540" class="small">• 二层以上不再保留整块2.6m深的空前室</text>
+
+  <rect x="750" y="615" width="520" height="245" rx="12" fill="#fff" stroke="#c9372c" stroke-width="2"/>
+  <text x="780" y="655" class="head warn">落地前必须完成的结构深化</text>
+  <text x="800" y="695" class="small">1. 原5m轴线梁穿过新楼梯洞口，不能按原梁继续施工</text>
+  <text x="800" y="725" class="small">2. 结构工程师需改为洞口边梁，并复核左侧两根柱</text>
+  <text x="800" y="755" class="small">3. 核对电梯门洞位置、底坑、导轨及井道墙做法</text>
+  <text x="800" y="785" class="small">4. 按实际层高绘制楼梯剖面，复核平台和梯段净高</text>
+  <text x="800" y="815" class="small">5. 施工图确认前不得浇筑该处柱梁和楼板</text>
+
+  <text x="1290" y="920" text-anchor="end" class="small" fill="#6b778c">可供建筑/结构深化的初步方案，不可直接作为施工放样图</text>
+</svg>
