@@ -438,15 +438,15 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <!-- 行李凳（近窗） -->
           <rect class="fx2" x="26" y="228" width="48" height="16"/>
           <!-- 半开放阳台（挑出1.5m·仅3层有，2层无）：地台 + 玻璃栏板 + 落地移门 + 两侧隐私分隔隔板（每间独立不连通） -->
-          <rect class="t-terr" x="6" y="264" width="148" height="58"/>
-          <line class="gl" x1="24" y1="261" x2="82" y2="261"/><line class="gl" x1="78" y1="264" x2="138" y2="264"/>
-          <rect class="wl" x="2" y="264" width="4" height="56"/>
-          <rect class="wl" x="154" y="264" width="4" height="56"/>
-          <line x1="6" y1="321" x2="154" y2="321" stroke="var(--ink)" stroke-width="2.2"/>
-          <line class="fx2" x1="6" y1="316" x2="154" y2="316"/>
+          <rect class="t-terr" x="24" y="264" width="112" height="58"/>
+          <line class="gl" x1="36" y1="261" x2="86" y2="261"/><line class="gl" x1="82" y1="264" x2="124" y2="264"/>
+          <rect class="wl" x="20" y="264" width="4" height="56"/>
+          <rect class="wl" x="136" y="264" width="4" height="56"/>
+          <line x1="24" y1="321" x2="136" y2="321" stroke="var(--ink)" stroke-width="2.2"/>
+          <line class="fx2" x1="24" y1="316" x2="136" y2="316"/>
           <!-- 空调外机位（阳台角·百叶） -->
-          <rect class="hv" x="118" y="288" width="36" height="16"/>
-          <line class="hvl" x1="124" y1="288" x2="124" y2="304"/><line class="hvl" x1="131" y1="288" x2="131" y2="304"/><line class="hvl" x1="138" y1="288" x2="138" y2="304"/><line class="hvl" x1="145" y1="288" x2="145" y2="304"/>
+          <rect class="hv" x="100" y="288" width="34" height="16"/>
+          <line class="hvl" x1="106" y1="288" x2="106" y2="304"/><line class="hvl" x1="113" y1="288" x2="113" y2="304"/><line class="hvl" x1="120" y1="288" x2="120" y2="304"/><line class="hvl" x1="127" y1="288" x2="127" y2="304"/>
         </g>
         <!-- 307 专用房型：面宽及阳台不动，走廊侧边界向阳台推进 900mm -->
         <g id="rm307">
@@ -637,12 +637,12 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <rect class="op" x="340" y="290" width="34" height="5"/><path class="dr" d="M340,290 L340,256 A34,34 0 0 1 374,290"/>
       <rect class="op" x="500" y="290" width="34" height="5"/><path class="dr" d="M500,290 L500,256 A34,34 0 0 1 534,290"/>
       <rect class="op" x="668" y="290" width="34" height="5"/><path class="dr" d="M668,290 L668,256 A34,34 0 0 1 702,290"/>
-      <!-- 西阳台（室304·临街前段沿西外墙挑1.5m）：与前阳台在西南角连通成 L 形绕角阳台；西窗改落地移门 -->
-      <rect class="t-terr" x="710" y="450" width="52" height="238"/>
+      <!-- 西阳台（室304·沿西外墙挑1.5m，独立阳台）：地台 + 玻璃栏板；西窗改落地移门 -->
+      <rect class="t-terr" x="710" y="450" width="52" height="170"/>
       <line class="fx2" x1="710" y1="450" x2="762" y2="450"/>
-      <line x1="762" y1="450" x2="762" y2="688" stroke="var(--ink)" stroke-width="2.2"/>
-      <line x1="708" y1="687" x2="762" y2="687" stroke="var(--ink)" stroke-width="2.2"/>
-      <line class="fx2" x1="757" y1="455" x2="757" y2="683"/>
+      <line class="fx2" x1="710" y1="620" x2="762" y2="620"/>
+      <line x1="762" y1="450" x2="762" y2="620" stroke="var(--ink)" stroke-width="2.2"/>
+      <line class="fx2" x1="757" y1="455" x2="757" y2="615"/>
       <line class="gl" x1="708" y1="470" x2="708" y2="560"/>
       </g>
       <!-- labels（组外，不随镜像翻转） -->
@@ -666,7 +666,7 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <!-- 阳台标注（本层=三层，挑出半开放阳台；二层同平面无阳台） -->
       <text class="lbl" x="340" y="664" text-anchor="middle" fill="var(--wood)" font-weight="600">半开放阳台 · 挑1.5m</text>
       <text class="lbl" x="310" y="6" text-anchor="middle" fill="var(--wood)" font-weight="600">半开放阳台 · 挑1.5m</text>
-      <text class="lbl" x="46" y="545" text-anchor="middle" fill="var(--wood)" font-weight="600" transform="rotate(-90 46 545)">西阳台·绕角接前阳台</text>
+      <text class="lbl" x="46" y="545" text-anchor="middle" fill="var(--wood)" font-weight="600" transform="rotate(-90 46 545)">西阳台·室304（独立）</text>
       <line class="hvl" x1="604" y1="694" x2="574" y2="666"/>
       <text class="lbl" x="608" y="697" fill="var(--anno)">▨ 空调外机位·百叶（各房阳台角，冷凝水接立管）</text>
       <!-- dimensions: 东侧加建进深（右侧，5000）+ 加建面宽 -->
@@ -736,7 +736,7 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <li>客房卫浴贴走廊上下对位、同层排水降板 350mm，各卫生间就近设排水管窿立管，2/3 层贯通、于一层吊顶内汇集下行（不穿越四、五层）；走廊净宽 1.8m，东西两端开窗采光。</li>
           <li>207/307 <b>面宽 4.0m、阳台、临街外墙和外窗位置均保持不动</b>；仅将走廊侧房间边界向阳台方向推进 900mm，房间进深由约 6.6m 压缩为约 5.7m。腾出的走廊侧空间并入电梯厅，取消原隔墙，使电梯厅一直延伸至307东侧外墙；集中管井位于东侧墙内并向电梯方向上移，避开307卫生间、房门开启范围及走廊东端窗。卫生间、家具及入户门随新边界向阳台方向重排。</li>
           <li>东后角 L 形加建 4×5m：西侧约 2.7×5m 做客房 208/308（后墙+西墙双面采光），东侧 1.2m 兼作候梯厅与疏散走道、北端出室外钢梯；楼梯双跑 2.3m。东侧一条总进深 20m。</li>
-          <li><b>三层挑出半开放阳台（本图所示）</b>：前排客房临街、后排客房朝后各挑出 1.5m 半开放阳台，室内保持基座尺寸不变；西前角室304沿西外墙加挑西阳台，并与前阳台在西南角连通、绕角成 L 形大转角阳台。阳台设玻璃栏板 h1.1m、落地移门入户，进深 1.5m 可摆两椅一几。<b>二层不挑出、无阳台</b>（结构上二层不允许悬挑）；东界（贴东界一侧）与西侧非第一节均不挑。</li>
+          <li><b>三层挑出半开放阳台（本图所示）</b>：前排客房临街、后排客房朝后各挑出 1.5m 半开放阳台，室内保持基座尺寸不变；西前角室304沿西外墙另加一独立西阳台。<b>每间客房阳台独立不连通</b>：阳台居中约 2.8m、两侧留约 0.6m 实墩并设隐私分隔隔板，相邻阳台间距约 1.2m，互不相望。阳台设玻璃栏板 h1.1m、落地移门入户，进深 1.5m 可摆两椅一几。<b>二层不挑出、无阳台</b>（结构上二层不允许悬挑）；东界与西侧非第一节均不挑。</li>
           <li>每间客房设专用空调外机位，随挑出移至各房阳台角、加百叶收口，冷凝水接背街立管；机位进深≥350mm 保证散热，上下层对位。二层无阳台层的外机仍设临街外墙内凹式百叶机位、街面不外露。</li>
         </ul>
       </div>
