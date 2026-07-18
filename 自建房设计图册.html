@@ -501,6 +501,12 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <!-- 301/302 恢复标准 4.0m 房型（疏散改走东侧 1.2m 走道经加建 308 出室外钢梯） -->
       <use href="#rm" transform="translate(390,294) scale(1,-1)"/>
       <use href="#rm" transform="translate(550,294) scale(1,-1)"/>
+      <!-- 303 后阳台压缩为 0.5m·退让北侧空出 1m 疏散平台（308 疏散门→平台→下室外钢梯） -->
+      <rect class="t-circ" x="232" y="-28" width="136" height="40"/>
+      <line x1="254" y1="12" x2="366" y2="12" stroke="var(--ink)" stroke-width="2.2"/>
+      <line class="fx2" x1="254" y1="17" x2="366" y2="17"/>
+      <rect class="hv" x="330" y="15" width="34" height="13"/>
+      <line class="hvl" x1="336" y1="15" x2="336" y2="28"/><line class="hvl" x1="343" y1="15" x2="343" y2="28"/><line class="hvl" x1="350" y1="15" x2="350" y2="28"/><line class="hvl" x1="357" y1="15" x2="357" y2="28"/>
       <!-- 室外疏散钢梯（东后角加建西侧·钢柱落地·至三层止） -->
       <rect class="fx" x="230" y="-104" width="120" height="76"/>
       <line class="fx2" x1="230" y1="-66" x2="350" y2="-66"/>
@@ -557,9 +563,11 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <rect class="wl" x="80" y="26" width="98" height="5"/>
       <rect class="op" x="100" y="26" width="40" height="5"/>
       <path class="dr" d="M140,31 L140,-9 A40,40 0 0 1 100,31"/>
-      <!-- 疏散门（走道北端出室外钢梯·乙级外开·900） -->
-      <rect class="op" x="230" y="-88" width="10" height="40"/>
-      <path class="dr" d="M240,-48 L280,-48 A40,40 0 0 0 240,-88" fill="none"/>
+      <!-- 走道东墙 + 疏散门（东出至 303 位疏散平台·乙级外开·900） -->
+      <rect class="wl" x="228" y="-108" width="4" height="82"/>
+      <rect class="wl" x="228" y="10" width="4" height="20"/>
+      <rect class="op" x="228" y="-26" width="4" height="36"/>
+      <path class="dr" d="M232,-26 L268,-26 A36,36 0 0 1 232,10" fill="none"/>
       <!-- 卫生间（内推门，洁具干湿分离） -->
       <rect class="wl" x="150" y="-44" width="5" height="70"/>
       <rect class="wl" x="80" y="-44" width="75" height="5"/>
@@ -654,6 +662,8 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <text class="rn" x="310" y="150">客房302</text><text class="rs" x="310" y="166">标准大床 26㎡</text>
       <text class="lbl" x="330" y="-64" text-anchor="middle" fill="var(--anno)">室外疏散钢梯 · 由 308 疏散门出 · 钢柱落地 · 至三层止</text>
       <text class="rn" x="470" y="150">客房303</text><text class="rs" x="470" y="166">标准大床 26㎡</text>
+      <text class="lbl" x="486" y="-6" text-anchor="middle" fill="var(--anno)">疏散平台 · 空出1m · 出梯</text>
+      <text class="lbl" x="470" y="26" text-anchor="middle">303阳台压缩0.5m</text>
       <text class="rn" x="655" y="272" text-anchor="middle">电梯</text><text class="rs" x="655" y="288" text-anchor="middle">2.4×2.4</text>
       <text class="rn" x="650" y="150" text-anchor="middle">楼梯</text><text class="rs" x="650" y="166" text-anchor="middle">双跑 20级 · 踏步280×165 · 梯段净宽1100</text><text class="lbl" x="612" y="222">上/下</text>
       <text class="lbl" x="577" y="120" text-anchor="middle" transform="rotate(90 577 120)">候梯厅 / 疏散走道 1.2m</text>
