@@ -1,0 +1,12 @@
+# 早期方案探索图（其他工具生成，不纳入正式交付）
+GPT/
+
+# LibreCAD 临时/备份文件
+\#*.dxf
+*.bak
+*~
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
