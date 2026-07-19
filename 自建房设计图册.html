@@ -757,9 +757,9 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
   </div>
   <!-- ================= A-03 四层平面 ================= -->
   <div class="sheet">
-    <div class="sheet-head"><span class="sn">A-03</span><h3>四层平面图 · 大家庭大套间（三室两厅三卫 + 保姆房 · 中厨独立）</h3><span class="sc">比例 1:100 · 尺寸单位 mm · 下方为临街面</span></div>
+    <div class="sheet-head"><span class="sn">A-03</span><h3>四层平面图 · 精装大平层（主卧套房 + 双次卧 + 书房 · 圆桌餐厅 + 开放厨房 · 参照大平层布局）</h3><span class="sc">比例 1:100 · 尺寸单位 mm · 下方为临街面</span></div>
     <div class="sheet-body">
-    <svg class="plan" viewBox="-40 -210 820 1000" role="img" aria-label="四层平面图：大家庭大套间，三室两厅三卫加保姆房——1.4m内走廊串联各卧室不穿房、封闭中厨靠北贴生活阳台并设烟道、餐厅与厨房一门之隔、主卧套房、带独立无障碍卫的老人房、大客厅通前挑阳台、卧室后挑阳台、西前角绕角西阳台，东后角 L 形加建保姆房">
+    <svg class="plan" viewBox="-40 -210 820 1000" role="img" aria-label="四层平面图：参照大平层布局的精装大套间——主卧套房带衣帽主卫、两间带独立卫的次卧、书房、大客厅通前挑阳台、圆桌八座餐厅居中开敞连开放厨房、厨房北向贴生活阳台设烟道、1.4m内走廊各房独立入户不穿房、玄关入户门厅、前挑阳台西南角绕角接西阳台并设角部室外餐桌，东后角 L 形加建客卧/家政">
       <!-- 整层左右镜像：交通核在右起 D 跨（对位实际电梯井）。图形整体镜像，文字/尺寸在组外 -->
       <g transform="translate(780,0) scale(-1,1)">
       <!-- zone tints -->
@@ -873,21 +873,23 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <rect class="op" x="70" y="-140" width="10" height="80"/><rect class="wf" x="71.5" y="-140" width="7" height="80"/><line class="gl" x1="75" y1="-140" x2="75" y2="-60"/>
       <!-- 玄关柜 -->
       <rect class="fx" x="200" y="342" width="28" height="28"/><rect class="fx" x="200" y="406" width="28" height="14"/>
-      <!-- 餐厅（B 跨中段）：与厨房一门之隔，南面向客厅开敞 -->
-      <rect class="fx" x="256" y="300" width="108" height="66"/>
-      <rect class="fx2" x="244" y="312" width="10" height="18"/><rect class="fx2" x="244" y="338" width="10" height="18"/>
-      <rect class="fx2" x="366" y="312" width="10" height="18"/><rect class="fx2" x="366" y="338" width="10" height="18"/>
-      <rect class="fx2" x="276" y="288" width="18" height="10"/><rect class="fx2" x="326" y="288" width="18" height="10"/>
-      <rect class="fx2" x="276" y="370" width="18" height="10"/><rect class="fx2" x="326" y="370" width="18" height="10"/>
-      <rect class="fx" x="238" y="396" width="70" height="18"/><line class="fx2" x1="238" y1="405" x2="308" y2="405"/>
-      <!-- 儿童房二（D 跨中段·带西侧外窗） -->
-      <rect class="fx" x="622" y="306" width="80" height="72"/>
-      <rect class="fx2" x="695" y="306" width="7" height="72"/>
-      <rect class="fx2" x="663" y="314" width="26" height="26"/><rect class="fx2" x="663" y="344" width="26" height="26"/>
-      <line class="fx2" x1="640" y1="306" x2="640" y2="378"/>
-      <rect class="fx2" x="622" y="384" width="20" height="18"/>
-      <rect class="fx" x="558" y="300" width="18" height="70"/><line class="fx2" x1="558" y1="335" x2="576" y2="335"/>
-      <rect class="fx" x="558" y="398" width="88" height="18"/><line class="fx2" x1="558" y1="407" x2="646" y2="407"/>
+      <!-- 圆桌餐厅（B 跨中段·参照大平层）：圆桌 8 座 + 餐边柜；北连内走廊、南敞连大客厅、西邻开放厨房 -->
+      <circle class="fx" cx="310" cy="360" r="43"/>
+      <circle class="fx2" cx="310" cy="360" r="34" fill="none"/>
+      <rect class="fx2" x="362" y="353" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="345" y="395" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="303" y="413" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="261" y="395" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="244" y="353" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="261" y="311" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="303" y="294" width="15" height="13" rx="3"/>
+      <rect class="fx2" x="345" y="311" width="15" height="13" rx="3"/>
+      <rect class="fx" x="238" y="401" width="72" height="15"/><line class="fx2" x1="238" y1="409" x2="310" y2="409"/>
+      <!-- 书房（D 跨中段·西向外窗·参照大平层）：书桌靠窗 + 书架 + 阅读椅 -->
+      <rect class="fx" x="656" y="300" width="44" height="66"/><line class="fx2" x1="656" y1="333" x2="700" y2="333"/>
+      <rect class="fx2" x="666" y="370" width="26" height="22" rx="3"/>
+      <rect class="fx" x="560" y="296" width="92" height="16"/><line class="fx2" x1="560" y1="304" x2="652" y2="304"/>
+      <rect class="fx" x="560" y="378" width="60" height="38" rx="4"/><line class="fx2" x1="560" y1="392" x2="620" y2="392"/>
       <!-- 厨房（B 跨后排·北向贴生活阳台）：L 型操作台 + 水槽 + 灶 + 烟道立管 -->
       <rect class="fx" x="238" y="45" width="146" height="20"/><line class="fx2" x1="238" y1="55" x2="384" y2="55"/>
       <rect class="fx2" x="252" y="47" width="28" height="16"/>
@@ -956,15 +958,22 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <line x1="762" y1="430" x2="762" y2="688" stroke="var(--ink)" stroke-width="2.2"/>
       <line class="fx2" x1="757" y1="435" x2="757" y2="625"/>
       <line class="gl" x1="708" y1="470" x2="708" y2="560"/>
+      <!-- 角部室外餐桌（参照大平层·前挑阳台两端露台）：方桌 4 椅 -->
+      <rect class="fx" x="689" y="648" width="22" height="22" transform="rotate(45 700 659)"/>
+      <line class="fx2" x1="690" y1="659" x2="710" y2="659"/><line class="fx2" x1="700" y1="649" x2="700" y2="669"/>
+      <rect class="fx2" x="695" y="632" width="10" height="9" rx="2"/><rect class="fx2" x="718" y="654" width="9" height="10" rx="2"/><rect class="fx2" x="695" y="677" width="10" height="9" rx="2"/><rect class="fx2" x="673" y="654" width="9" height="10" rx="2"/>
+      <rect class="fx" x="129" y="648" width="22" height="22" transform="rotate(45 140 659)"/>
+      <line class="fx2" x1="130" y1="659" x2="150" y2="659"/><line class="fx2" x1="140" y1="649" x2="140" y2="669"/>
+      <rect class="fx2" x="135" y="632" width="10" height="9" rx="2"/><rect class="fx2" x="158" y="654" width="9" height="10" rx="2"/><rect class="fx2" x="135" y="677" width="10" height="9" rx="2"/><rect class="fx2" x="113" y="654" width="9" height="10" rx="2"/>
       </g>
       <!-- labels（组外，不随镜像翻转） -->
       <text class="rn" x="300" y="512" text-anchor="middle">大客厅（临街）</text>
       <text class="rs" x="300" y="528" text-anchor="middle">整面落地移门 · 通前挑阳台</text>
-      <text class="rn" x="470" y="330" text-anchor="middle">餐厅</text><text class="rs" x="470" y="346" text-anchor="middle">与厨房一门之隔 · 南接客厅</text>
+      <text class="rn" x="470" y="330" text-anchor="middle">圆桌餐厅</text><text class="rs" x="470" y="346" text-anchor="middle">8 座 · 居中开敞 · 南接大客厅</text>
       <text class="lbl" x="264" y="262" text-anchor="middle">内走廊 1.4m</text>
       <text class="lbl" x="326" y="330" text-anchor="middle">公卫</text><text class="lbl" x="310" y="392" text-anchor="middle">储藏</text>
-      <text class="rn" x="470" y="112" text-anchor="middle">厨房</text><text class="rs" x="470" y="128" text-anchor="middle">封闭 · 北向贴生活阳台 · 19㎡</text><text class="lbl" x="466" y="196" text-anchor="middle" fill="var(--anno)">▨ 烟道上屋面</text>
-      <text class="rn" x="304" y="112" text-anchor="middle">老人房</text><text class="rs" x="304" y="128" text-anchor="middle">带独立无障碍卫 · 19㎡</text><text class="lbl" x="342" y="200" text-anchor="middle">老人卫</text>
+      <text class="rn" x="470" y="112" text-anchor="middle">开放厨房</text><text class="rs" x="470" y="128" text-anchor="middle">北向贴生活阳台 · 连餐厅 · 19㎡</text><text class="lbl" x="466" y="196" text-anchor="middle" fill="var(--anno)">▨ 烟道上屋面</text>
+      <text class="rn" x="304" y="112" text-anchor="middle">次卧一</text><text class="rs" x="304" y="128" text-anchor="middle">带独立卫 · 19㎡</text><text class="lbl" x="342" y="200" text-anchor="middle">次卫</text>
       <text class="rn" x="130" y="188" text-anchor="middle">主卧套房</text><text class="rs" x="130" y="204" text-anchor="middle">衣帽+主卫 · 26㎡</text>
       <text class="lbl" x="197" y="72" text-anchor="middle">衣帽</text>
       <text class="lbl" x="120" y="115" text-anchor="middle">主卫</text>
@@ -972,12 +981,12 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <text class="rn" x="655" y="262" text-anchor="middle">电梯</text><text class="rs" x="655" y="278" text-anchor="middle">2.4×2.4 · 梯控入户</text>
       <text class="rn" x="650" y="150" text-anchor="middle">楼梯</text><text class="lbl" x="628" y="210" text-anchor="end">下/上屋面</text>
       <text class="lbl" x="577" y="170" text-anchor="middle" transform="rotate(90 577 170)">走道 1.2m</text>
-      <text class="lbl" x="600" y="474" text-anchor="middle">入户门厅</text>
-      <text class="rn" x="146" y="348" text-anchor="middle">儿童房</text><text class="rs" x="146" y="364" text-anchor="middle">西向采光 · 19㎡</text>
+      <text class="lbl" x="600" y="474" text-anchor="middle">玄关（入户门厅）</text>
+      <text class="rn" x="146" y="348" text-anchor="middle">书房</text><text class="rs" x="146" y="364" text-anchor="middle">西向采光 · 书桌书架 · 19㎡</text>
       <line class="hvl" x1="686" y1="380" x2="712" y2="354"/><text class="lbl" x="716" y="357" fill="var(--anno)">▤ 管井·电/水</text>
-      <text class="rn" x="632" y="-116" text-anchor="middle">保姆房</text><text class="rs" x="632" y="-100" text-anchor="middle">单人床 + 衣柜 + 洗衣家政 · 20㎡</text>
+      <text class="rn" x="632" y="-116" text-anchor="middle">客卧（东后角）</text><text class="rs" x="632" y="-100" text-anchor="middle">独立入户 · 单人床 + 衣柜 · 可作家政 · 20㎡</text>
       <!-- 阳台标注（四层三面挑出半开放阳台） -->
-      <text class="lbl" x="300" y="664" text-anchor="middle" fill="var(--wood)" font-weight="600">前挑半开放阳台 · 挑1.5m</text>
+      <text class="lbl" x="300" y="664" text-anchor="middle" fill="var(--wood)" font-weight="600">前挑半开放阳台 · 挑1.5m · 两端设室外餐桌</text>
       <text class="lbl" x="400" y="6" text-anchor="middle" fill="var(--wood)" font-weight="600">后挑半开放阳台 · 挑1.5m</text>
       <text class="lbl" x="46" y="545" text-anchor="middle" fill="var(--wood)" font-weight="600" transform="rotate(-90 46 545)">西阳台·绕角接前阳台</text>
       <text class="lbl" x="420" y="70" text-anchor="middle" fill="var(--anno)">▨ 空调机位（卧室背立面）· 外机亦可集中上主屋面</text>
@@ -1033,19 +1042,19 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
         <h4>空间明细</h4>
         <table>
           <tr><th>空间</th><th class="num">面积</th><th>空间</th><th class="num">面积</th></tr>
-          <tr><td>大客厅（临街）+ 餐厅 + 内走廊</td><td class="num">约95 ㎡</td><td>主卧套房（卧+衣帽+主卫）</td><td class="num">26 ㎡</td></tr>
-          <tr><td>老人房（带独立无障碍卫）</td><td class="num">19 ㎡</td><td>儿童房（西向采光）</td><td class="num">19 ㎡</td></tr>
-          <tr><td>封闭中厨（北向·贴生活阳台）</td><td class="num">19 ㎡</td><td>保姆房（东后角加建）</td><td class="num">20 ㎡</td></tr>
-          <tr><td>入户门厅 + 公卫 + 交通核</td><td class="num">约45 ㎡</td><td>三面半开放阳台（不计容）</td><td class="num">约55 ㎡</td></tr>
+          <tr><td>大客厅（临街）+ 圆桌餐厅 + 内走廊</td><td class="num">约95 ㎡</td><td>主卧套房（卧+衣帽+主卫）</td><td class="num">26 ㎡</td></tr>
+          <tr><td>次卧一（带独立卫）</td><td class="num">19 ㎡</td><td>书房（西向采光·书桌书架）</td><td class="num">19 ㎡</td></tr>
+          <tr><td>开放厨房（北向·贴生活阳台）</td><td class="num">19 ㎡</td><td>客卧（东后角加建·独立入户）</td><td class="num">20 ㎡</td></tr>
+          <tr><td>玄关 + 公卫 + 储藏 + 交通核</td><td class="num">约45 ㎡</td><td>三面半开放阳台 + 角部餐桌（不计容）</td><td class="num">约55 ㎡</td></tr>
         </table>
       </div>
       <div>
         <h4>设计说明（对位实际桩网）</h4>
         <ul>
-          <li><b>四层为大家庭大套间（三代同堂）</b>：四室两厅三卫 + 保姆房，与五层大平层<b>户型不同</b>但结构柱网、管井、阳台、交通核完全上下对位。<b>老人房</b>置于背街安静侧、紧邻电梯与公区，配独立<b>无障碍卫</b>（无门槛淋浴、马桶两侧扶手、台盆下留腿部空间），门洞加宽、房内留 900 回转通道；<b>儿童房</b>在西侧中段、西向采光；主卧套房独占西北角带衣帽+主卫。<b>各卧室均由 1.4m 内走廊独立入户，互不穿越</b>（内走廊自餐厅东进，串联主卧、老人房、厨房、儿童房与公卫）。</li>
+          <li><b>四层为参照大平层布局的精装大套间</b>：主卧套房 + 双次卧 + 书房 + 大客厅 + 圆桌餐厅 + 开放厨房 + 玄关，与五层大平层<b>户型不同</b>但结构柱网、管井、阳台、交通核完全上下对位。<b>主卧套房</b>独占西北角带衣帽+主卫；<b>次卧一</b>置于背街安静侧、带独立卫、紧邻公区；<b>书房</b>在西侧中段、西向采光设书桌书架；东后角加建作<b>客卧</b>（独立入户、可兼家政）。<b>各卧室与书房均由 1.4m 内走廊独立入户，互不穿越</b>（内走廊自餐厅东进，串联主卧、次卧、厨房、书房与公卫）。</li>
           <li>电梯（2.4×2.4，D 跨中后靠东，门朝西侧户内走道）设梯控刷卡直达入户，出梯即入户门厅，与楼下民宿客流完全分离；楼梯继续上通屋面。室外疏散钢梯至三层止（见 A-02）；四、五层为住宅（每层一户），经室内封闭楼梯疏散、户门采用乙级防火门，以当地审图意见为准。</li>
-          <li>室内满铺基座（Y0–15）：临街整幅落地客厅（约 12m 面宽×5m 进深），以整面落地玻璃移门通前挑阳台，柱子落在移门轴线上、室内无凸柱。<b>中厨封闭独立</b>：置于北向 B 跨、直接贴后挑阳台作生活阳台（晾晒/杂物），灶台侧设专用烟道直上屋面，油烟不入起居区；<b>餐厅与厨房一门之隔</b>（推拉门），南面向大客厅开敞，可容纳大家庭聚餐。保姆房由 1.2m 走道独立进出，不穿越主要起居区。</li>
-          <li>三面挑出 1.5m 半开放阳台——大客厅前挑（临街全宽）、卧室后挑（北向）、儿童房二/客厅西前角西挑（与前阳台在西南角连通、绕角成 L 形大转角阳台）；均玻璃栏板 h1.1m。套内约 200㎡（三室两厅三卫 + 保姆房 + 储藏），阳台约 55㎡不计容。</li>
+          <li>室内满铺基座（Y0–15）：临街整幅落地客厅（约 12m 面宽×5m 进深），以整面落地玻璃移门通前挑阳台，柱子落在移门轴线上、室内无凸柱。<b>圆桌餐厅居中</b>（8 座）：北连内走廊、南向大客厅开敞、西邻厨房，形成 客厅↔餐厅↔厨房 一体的公共大厅；<b>开放厨房</b>置于北向 B 跨、直接贴后挑阳台作生活阳台（晾晒/杂物），灶台侧设专用烟道直上屋面、油烟经排风罩不入起居区（如需重油烹饪可加推拉玻璃门半封闭）。客卧由 1.2m 走道独立进出，不穿越主要起居区。</li>
+          <li>三面挑出 1.5m 半开放阳台——大客厅前挑（临街全宽）、卧室后挑（北向）、书房/客厅西前角西挑（与前阳台在西南角绕角成 L 形大转角阳台）；均玻璃栏板 h1.1m。<b>前挑阳台两端设室外餐桌</b>（方桌 4 椅）作露台茶座/户外用餐。套内约 200㎡（主卧套房 + 双次卧 + 书房 + 客卧 + 两厅 + 多卫 + 储藏），阳台约 55㎡不计容。</li>
           <li>集中管井设在东侧墙内并向电梯方向上移，与楼层上下对齐，避开房间、卫生间及门洞；厨房、主卫、公卫及家政用水以短支管接入，检修面由电梯厅设备柜侧组织。</li>
           <li>空调：卧室外机放背立面/阳台侧百叶，客厅多联机外机集中上主屋面（女儿墙内），街面不见外机；冷凝水接立管。</li>
         </ul>
