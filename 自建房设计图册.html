@@ -427,8 +427,9 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <ellipse class="fx" cx="60" cy="30" rx="9" ry="11"/>
           <rect class="fx" x="8" y="56" width="36" height="20"/>
           <ellipse class="fx2" cx="26" cy="66" rx="12" ry="7"/>
-          <rect class="fx" x="96" y="6" width="16" height="64"/>
-          <line class="fx2" x1="96" y1="38" x2="112" y2="38"/>
+          <!-- 衣柜 2026-07-20 移至卫生间对侧墙（东墙），入户门开在衣柜与卫生间之间 -->
+          <rect class="fx" x="140" y="6" width="18" height="64"/>
+          <line class="fx2" x1="140" y1="38" x2="158" y2="38"/>
           <!-- 大床 1.8×2.0m：床头靠侧隔墙，床尾朝走道；床侧留 1.9m 通道直达窗边 -->
           <rect class="fx" x="4" y="132" width="80" height="72"/>
           <rect class="fx2" x="4" y="132" width="7" height="72"/>
@@ -467,8 +468,9 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <ellipse class="fx" cx="100" cy="30" rx="9" ry="11"/>
           <rect class="fx" x="116" y="56" width="36" height="20"/>
           <ellipse class="fx2" cx="134" cy="66" rx="12" ry="7"/>
-          <rect class="fx" x="48" y="6" width="16" height="64"/>
-          <line class="fx2" x1="64" y1="38" x2="48" y2="38"/>
+          <!-- 衣柜 2026-07-20 移至卫生间对侧墙（西墙），入户门开在衣柜与卫生间之间 -->
+          <rect class="fx" x="2" y="6" width="18" height="64"/>
+          <line class="fx2" x1="20" y1="38" x2="2" y2="38"/>
           <rect class="fx" x="4" y="132" width="80" height="72"/>
           <rect class="fx2" x="4" y="132" width="7" height="72"/>
           <rect class="fx2" x="14" y="138" width="26" height="28"/>
@@ -669,10 +671,12 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <!-- 307前方空间并入电梯厅：取消原走廊隔墙，电梯厅延伸至东侧外墙 -->
       <rect class="op" x="80" y="362" width="148" height="5"/>
       <rect class="wl" x="80" y="398" width="148" height="5"/>
-      <rect class="op" x="164" y="398" width="34" height="5"/><path class="dr" d="M164,403 L164,437 A34,34 0 0 0 198,403"/>
-      <rect class="op" x="246" y="362" width="34" height="5"/><path class="dr" d="M280,367 L280,401 A34,34 0 0 1 246,367"/>
-      <rect class="op" x="500" y="362" width="34" height="5"/><path class="dr" d="M500,367 L500,401 A34,34 0 0 0 534,367"/>
-      <rect class="op" x="660" y="362" width="34" height="5"/><path class="dr" d="M660,367 L660,401 A34,34 0 0 0 694,367"/>
+      <!-- 307 客房门 2026-07-20 改：开门后门扇靠衣柜侧 -->
+      <rect class="op" x="170" y="398" width="34" height="5"/><path class="dr" d="M204,403 L204,437 A34,34 0 0 1 170,403"/>
+      <!-- 客房门 2026-07-20 改：开门后门扇靠衣柜侧（各房衣柜均已移至卫生间对侧） -->
+      <rect class="op" x="256" y="362" width="34" height="5"/><path class="dr" d="M256,367 L256,401 A34,34 0 0 0 290,367"/>
+      <rect class="op" x="488" y="362" width="34" height="5"/><path class="dr" d="M522,367 L522,401 A34,34 0 0 1 488,367"/>
+      <rect class="op" x="576" y="362" width="34" height="5"/><path class="dr" d="M576,367 L576,401 A34,34 0 0 0 610,367"/>
       <!-- 集中管井放回东侧墙内并向电梯方向上移，避开307卫生间、房门及走廊东端窗 -->
       <rect class="wl" x="82" y="362" width="24" height="36"/>
       <rect class="op" x="84" y="364" width="20" height="15"/>
@@ -681,9 +685,10 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <line class="fx2" x1="84" y1="381" x2="104" y2="396"/><line class="fx2" x1="104" y1="381" x2="84" y2="396"/>
       <!-- 消火栓箱（利用电梯南侧凹位·贴井壁） -->
       <rect class="fx" x="112" y="332" width="44" height="14"/><line class="fx2" x1="112" y1="339" x2="156" y2="339"/>
-      <rect class="op" x="246" y="290" width="34" height="5"/><path class="dr" d="M280,290 L280,256 A34,34 0 0 0 246,290"/>
-      <rect class="op" x="500" y="290" width="34" height="5"/><path class="dr" d="M500,290 L500,256 A34,34 0 0 1 534,290"/>
-      <rect class="op" x="558" y="290" width="34" height="5"/><path class="dr" d="M592,290 L592,256 A34,34 0 0 0 558,290"/>
+      <!-- 客房门 2026-07-20 改：开门后门扇靠衣柜侧（各房衣柜均已移至卫生间对侧） -->
+      <rect class="op" x="256" y="290" width="34" height="5"/><path class="dr" d="M256,290 L256,256 A34,34 0 0 1 290,290"/>
+      <rect class="op" x="488" y="290" width="34" height="5"/><path class="dr" d="M522,290 L522,256 A34,34 0 0 0 488,290"/>
+      <rect class="op" x="576" y="290" width="34" height="5"/><path class="dr" d="M576,290 L576,256 A34,34 0 0 1 610,290"/>
       <!-- 西阳台（室304·沿西外墙挑1.5m）：西南角绕角接 304 前阳台成 L 形转角阳台；地台 + 玻璃栏板；西窗改落地移门 -->
       <rect class="t-terr" x="710" y="430" width="52" height="200"/>
       <rect class="t-terr" x="686" y="630" width="76" height="58"/>
