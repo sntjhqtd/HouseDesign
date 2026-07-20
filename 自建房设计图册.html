@@ -417,16 +417,17 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <!-- 卫生间 2026-07-20 收至净 1800×2000（原 2000×2200 偏大） -->
           <rect class="t-wet" x="4" y="4" width="76" height="84"/>
           <rect class="wl" x="76" y="4" width="4" height="84"/>
-          <rect class="wl" x="4" y="84" width="42" height="4"/>
-          <!-- 卫生间门：向卫生间内推开（铰链贴内墙侧），开启扇形内不放洁具 -->
-          <path class="dr" d="M76,88 L46,88 A30,30 0 0 1 76,58"/>
+          <rect class="wl" x="34" y="84" width="42" height="4"/>
+          <!-- 卫生间门 2026-07-20 改：从衣柜对侧（西/外墙侧）进门，向卫生间内推开 -->
+          <path class="dr" d="M4,88 L4,58 A30,30 0 0 0 34,88"/>
           <rect class="fx" x="9" y="9" width="32" height="32"/>
           <line class="fx2" x1="9" y1="9" x2="41" y2="41"/>
           <circle class="fx2" cx="25" cy="25" r="2.5"/>
           <rect class="fx" x="50" y="8" width="20" height="8"/>
           <ellipse class="fx" cx="60" cy="30" rx="9" ry="11"/>
-          <rect class="fx" x="8" y="56" width="36" height="20"/>
-          <ellipse class="fx2" cx="26" cy="66" rx="12" ry="7"/>
+          <!-- 马桶随门腾到东侧（原西侧门位） -->
+          <rect class="fx" x="40" y="56" width="36" height="20"/>
+          <ellipse class="fx2" cx="58" cy="66" rx="12" ry="7"/>
           <!-- 衣柜 2026-07-20 移至卫生间对侧墙（东墙），入户门开在衣柜与卫生间之间 -->
           <rect class="fx" x="140" y="6" width="18" height="64"/>
           <line class="fx2" x1="140" y1="38" x2="158" y2="38"/>
@@ -459,15 +460,17 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <!-- 卫生间 2026-07-20 收至净 1800×2000（原 2000×2200 偏大），与 #rm 镜像同步 -->
           <rect class="t-wet" x="80" y="4" width="76" height="84"/>
           <rect class="wl" x="80" y="4" width="4" height="84"/>
-          <rect class="wl" x="114" y="84" width="42" height="4"/>
-          <path class="dr" d="M84,88 L114,88 A30,30 0 0 0 84,58"/>
+          <rect class="wl" x="84" y="84" width="42" height="4"/>
+          <!-- 卫生间门 2026-07-20 改：从衣柜对侧（东侧）进门 -->
+          <path class="dr" d="M156,88 L156,58 A30,30 0 0 1 126,88"/>
           <rect class="fx" x="119" y="9" width="32" height="32"/>
           <line class="fx2" x1="151" y1="9" x2="119" y2="41"/>
           <circle class="fx2" cx="135" cy="25" r="2.5"/>
           <rect class="fx" x="90" y="8" width="20" height="8"/>
           <ellipse class="fx" cx="100" cy="30" rx="9" ry="11"/>
-          <rect class="fx" x="116" y="56" width="36" height="20"/>
-          <ellipse class="fx2" cx="134" cy="66" rx="12" ry="7"/>
+          <!-- 马桶随门腾到西侧（原东侧门位） -->
+          <rect class="fx" x="84" y="56" width="36" height="20"/>
+          <ellipse class="fx2" cx="102" cy="66" rx="12" ry="7"/>
           <!-- 衣柜 2026-07-20 移至卫生间对侧墙（西墙），入户门开在衣柜与卫生间之间 -->
           <rect class="fx" x="2" y="6" width="18" height="64"/>
           <line class="fx2" x1="20" y1="38" x2="2" y2="38"/>
@@ -495,15 +498,17 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
           <!-- 卫生间 2026-07-20 收至净 1800×2000（原 2000×2200 偏大） -->
           <rect class="t-wet" x="4" y="40" width="76" height="84"/>
           <rect class="wl" x="76" y="40" width="4" height="84"/>
-          <rect class="wl" x="4" y="120" width="42" height="4"/>
-          <path class="dr" d="M76,124 L46,124 A30,30 0 0 1 76,94"/>
+          <rect class="wl" x="34" y="120" width="42" height="4"/>
+          <!-- 卫生间门 2026-07-20 改：从衣柜对侧（西/外墙侧）进门 -->
+          <path class="dr" d="M4,124 L4,94 A30,30 0 0 0 34,124"/>
           <rect class="fx" x="9" y="45" width="32" height="32"/>
           <line class="fx2" x1="9" y1="45" x2="41" y2="77"/>
           <circle class="fx2" cx="25" cy="61" r="2.5"/>
           <rect class="fx" x="50" y="44" width="20" height="8"/>
           <ellipse class="fx" cx="60" cy="66" rx="9" ry="11"/>
-          <rect class="fx" x="8" y="92" width="36" height="20"/>
-          <ellipse class="fx2" cx="26" cy="102" rx="12" ry="7"/>
+          <!-- 马桶随门腾到东侧（原西侧门位） -->
+          <rect class="fx" x="40" y="92" width="36" height="20"/>
+          <ellipse class="fx2" cx="58" cy="102" rx="12" ry="7"/>
           <rect class="fx" x="140" y="42" width="16" height="64"/>
           <line class="fx2" x1="140" y1="74" x2="156" y2="74"/>
           <!-- 家具向阳台方向重排，压缩房间进深 -->
@@ -1649,13 +1654,14 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <!-- 卫生间隔墙 120 -->
       <rect class="wl" x="294" y="70" width="10" height="170"/>
       <rect class="wl" x="150" y="230" width="154" height="10"/>
-      <!-- 卫生间门 M4 800（内平开，向卫生间推）：铰链在右门垛，弧线外凸入卫生间 -->
-      <rect class="op" x="226" y="230" width="68" height="10"/>
-      <path class="dr" d="M294,230 L294,162 A68,68 0 0 0 226,230"/>
+      <!-- 卫生间门 M4 800（内平开，向卫生间推）2026-07-20 改：从衣柜对侧（西/外墙侧）进门，铰链在左门垛贴外墙，弧线外凸入卫生间 -->
+      <rect class="op" x="150" y="230" width="68" height="10"/>
+      <path class="dr" d="M150,230 L150,162 A68,68 0 0 1 218,230"/>
       <!-- 卫生间洁具：淋浴 900×900 / 马桶 / 台盆 -->
       <rect class="fx" x="158" y="78" width="70" height="70"/><line class="fx2" x1="158" y1="78" x2="228" y2="148"/><circle class="fx2" cx="193" cy="113" r="4"/>
       <rect class="fx" x="244" y="78" width="46" height="16"/><ellipse class="fx" cx="267" cy="122" rx="18" ry="22"/>
-      <rect class="fx" x="158" y="176" width="60" height="38"/><ellipse class="fx2" cx="188" cy="195" rx="22" ry="13"/>
+      <!-- 马桶随门腾到东侧（原西侧门位） -->
+      <rect class="fx" x="226" y="176" width="60" height="38"/><ellipse class="fx2" cx="256" cy="195" rx="22" ry="13"/>
       <!-- 衣柜 600 深 -->
       <rect class="fx" x="304" y="70" width="46" height="120"/><line class="fx2" x1="304" y1="130" x2="350" y2="130"/>
       <!-- 入户门 M3 900（向房内推）：铰链在右门垛，弧线外凸入房 -->
@@ -1697,7 +1703,7 @@ footer{margin-top:70px;border-top:1.5px solid var(--ink);padding:18px 2px 8px;
       <text class="dimt" x="116" y="154" text-anchor="middle" transform="rotate(-90 116 154)">卫 2000</text>
       <text class="dimt" x="116" y="410" text-anchor="middle" transform="rotate(-90 116 410)">4600</text>
       <!-- 引注 -->
-      <text class="rn" x="222" y="196">卫生间</text><text class="rs" x="222" y="210">1800×2000 · 干湿分离</text>
+      <text class="rn" x="228" y="164">卫生间</text><text class="rs" x="228" y="178">1800×2000 · 干湿分离</text>
       <text class="lbl" x="193" y="118" text-anchor="middle">淋浴 900×900</text>
       <text class="rn" x="330" y="405">大床 1800×2000</text>
       <text class="lbl" x="443" y="392" text-anchor="middle" transform="rotate(90 443 392)">电视/书桌 500深</text>
